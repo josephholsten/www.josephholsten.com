@@ -1,0 +1,107 @@
+.action-stream-header {
+    margin:  1em 0 .25em;
+}
+
+.action-stream-list {
+    margin-left: 0px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.action-stream-list li {
+    margin: 0 0 .5em;
+}
+
+.service-icons li {
+    display: block;
+    overflow: hidden;
+    background: transparent url(http://assets.josephholsten.com/images/services/other.png) no-repeat;
+    padding-left: 20px;
+    min-height: 18px;
+    min-width: 16px;
+}
+
+.service-icons li.no-service { background: none; }
+
+.service-icons li.service-lastfm .album { display: none; }
+.service-icons li.service-website { background-image: url(http://assets.josephholsten.com/images/services/website.png); }
+.service-icons li.service-brightkite { background-image: url(http://assets.josephholsten.com/images/services/brightkite.png); }
+.service-icons li.service-backtype { background-image: url(http://assets.josephholsten.com/images/services/backtype.png); }
+.service-icons li.service-cocomment { background-image: url(http://assets.josephholsten.com/images/services/cocomment.png); }
+.service-icons li.service-oneup { background-image: url(http://assets.josephholsten.com/images/services/oneup.png); }
+.service-icons li.service-fortythreethings { background-image: url(http://assets.josephholsten.com/images/services/fortythreethings.png); }
+.service-icons li.service-aim { background-image: url(http://assets.josephholsten.com/images/services/aim.png); }
+.service-icons li.service-bebo { background-image: url(http://assets.josephholsten.com/images/services/bebo.png); }
+.service-icons li.service-catster { background-image: url(http://assets.josephholsten.com/images/services/catster.png); }
+.service-icons li.service-deadjournal { background-image: url(http://assets.josephholsten.com/images/services/deadjournal.png); }
+.service-icons li.service-delicious { background-image: url(http://assets.josephholsten.com/images/services/delicious.png); }
+.service-icons li.service-digg { background-image: url(http://assets.josephholsten.com/images/services/digg.png); }
+.service-icons li.service-dodgeball { background-image: url(http://assets.josephholsten.com/images/services/dodgeball.png); }
+.service-icons li.service-dogster { background-image: url(http://assets.josephholsten.com/images/services/dogster.png); }
+.service-icons li.service-dopplr { background-image: url(http://assets.josephholsten.com/images/services/dopplr.png); }
+.service-icons li.service-facebook { background-image: url(http://assets.josephholsten.com/images/services/facebook.png); }
+.service-icons li.service-flickr { background-image: url(http://assets.josephholsten.com/images/services/flickr.png); }
+.service-icons li.service-gametap { background-image: url(http://assets.josephholsten.com/images/services/gametap.png); }
+.service-icons li.service-getsatisfaction { background-image: url(http://assets.josephholsten.com/images/services/getsatisfaction.png); }
+.service-icons li.service-goodreads { background-image: url(http://assets.josephholsten.com/images/services/goodreads.png); }
+.service-icons li.service-googlereader { background-image: url(http://assets.josephholsten.com/images/services/googlereader.png); }
+.service-icons li.service-gtalk { background-image: url(http://assets.josephholsten.com/images/services/gtalk.png); }
+.service-icons li.service-github { background-image: url(http://assets.josephholsten.com/images/services/github.png); }
+.service-icons li.service-hi5 { background-image: url(http://assets.josephholsten.com/images/services/hi5.png); }
+.service-icons li.service-iconbuffet { background-image: url(http://assets.josephholsten.com/images/services/iconbuffet.png); }
+.service-icons li.service-icq { background-image: url(http://assets.josephholsten.com/images/services/icq.png); }
+.service-icons li.service-iusethis { background-image: url(http://assets.josephholsten.com/images/services/iusethis.png); }
+.service-icons li.service-jabber { background-image: url(http://assets.josephholsten.com/images/services/jabber.png); }
+.service-icons li.service-jaiku { background-image: url(http://assets.josephholsten.com/images/services/jaiku.png); }
+.service-icons li.service-lastfm { background-image: url(http://assets.josephholsten.com/images/services/lastfm.png); }
+.service-icons li.service-linkedin { background-image: url(http://assets.josephholsten.com/images/services/linkedin.png); }
+.service-icons li.service-livedoor { background-image: url(http://assets.josephholsten.com/images/services/livedoor.png); }
+.service-icons li.service-livejournal { background-image: url(http://assets.josephholsten.com/images/services/livejournal.png); }
+.service-icons li.service-magnolia { background-image: url(http://assets.josephholsten.com/images/services/magnolia.png); }
+.service-icons li.service-mog { background-image: url(http://assets.josephholsten.com/images/services/mog.png); }
+.service-icons li.service-msn { background-image: url(http://assets.josephholsten.com/images/services/msn.png); }
+.service-icons li.service-multiply { background-image: url(http://assets.josephholsten.com/images/services/multiply.png); }
+.service-icons li.service-myspace { background-image: url(http://assets.josephholsten.com/images/services/myspace.png); }
+.service-icons li.service-newsvine { background-image: url(http://assets.josephholsten.com/images/services/newsvine.png); }
+.service-icons li.service-ning { background-image: url(http://assets.josephholsten.com/images/services/ning.png); }
+.service-icons li.service-ohloh { background-image: url(http://assets.josephholsten.com/images/services/ohloh.png); }
+.service-icons li.service-orkut { background-image: url(http://assets.josephholsten.com/images/services/orkut.png); }
+.service-icons li.service-pandora { background-image: url(http://assets.josephholsten.com/images/services/pandora.png); }
+.service-icons li.service-pownce { background-image: url(http://assets.josephholsten.com/images/services/pownce.png); }
+.service-icons li.service-reddit { background-image: url(http://assets.josephholsten.com/images/services/reddit.png); }
+.service-icons li.service-skype { background-image: url(http://assets.josephholsten.com/images/services/skype.png); }
+.service-icons li.service-smugmug { background-image: url(http://assets.josephholsten.com/images/services/smugmug.png); }
+.service-icons li.service-sonicliving { background-image: url(http://assets.josephholsten.com/images/services/sonicliving.png); }
+.service-icons li.service-steam { background-image: url(http://assets.josephholsten.com/images/services/steam.png); }
+.service-icons li.service-stumbleupon { background-image: url(http://assets.josephholsten.com/images/services/stumbleupon.png); }
+.service-icons li.service-tabblo { background-image: url(http://assets.josephholsten.com/images/services/tabblo.png); }
+.service-icons li.service-technorati { background-image: url(http://assets.josephholsten.com/images/services/technorati.png); }
+.service-icons li.service-tribe { background-image: url(http://assets.josephholsten.com/images/services/tribe.png); }
+.service-icons li.service-twitter { background-image: url(http://assets.josephholsten.com/images/services/twitter.png); }
+.service-icons li.service-uncrate { background-image: url(http://assets.josephholsten.com/images/services/uncrate.png); }
+.service-icons li.service-upcoming { background-image: url(http://assets.josephholsten.com/images/services/upcoming.png); }
+.service-icons li.service-userscripts { background-image: url(http://assets.josephholsten.com/images/services/userscripts.png); }
+.service-icons li.service-virb { background-image: url(http://assets.josephholsten.com/images/services/virb.png); }
+.service-icons li.service-vox { background-image: url(http://assets.josephholsten.com/images/services/vox.png); }
+.service-icons li.service-xboxlive { background-image: url(http://assets.josephholsten.com/images/services/xboxlive.png); }
+.service-icons li.service-yahoo { background-image: url(http://assets.josephholsten.com/images/services/yahoo.png); }
+.service-icons li.service-youtube { background-image: url(http://assets.josephholsten.com/images/services/youtube.png); }
+.service-icons li.service-zooomr { background-image: url(http://assets.josephholsten.com/images/services/zooomr.png); }
+
+.service-icons li.service-backpack { background-image: url(http://assets.josephholsten.com/images/services/backpack.png); }
+.service-icons li.service-basecamp { background-image: url(http://assets.josephholsten.com/images/services/basecamp.png); }
+.service-icons li.service-claimid { background-image: url(http://assets.josephholsten.com/images/services/claimid.png); }
+.service-icons li.service-citeulike { background-image: url(http://assets.josephholsten.com/images/services/citeulike.png); }
+.service-icons li.service-gmail { background-image: url(http://assets.josephholsten.com/images/services/gmail.png); }
+.service-icons li.service-highrise { background-image: url(http://assets.josephholsten.com/images/services/highrise.png); }
+.service-icons li.service-joyent { background-image: url(http://assets.josephholsten.com/images/services/joyent.png); }
+.service-icons li.service-mint { background-image: url(http://assets.josephholsten.com/images/services/mint.png); }
+.service-icons li.service-myvidoop { background-image: url(http://assets.josephholsten.com/images/services/myvidoop.png); }
+.service-icons li.service-netflix { background-image: url(http://assets.josephholsten.com/images/services/netflix.png); }
+.service-icons li.service-newsgator { background-image: url(http://assets.josephholsten.com/images/services/newsgator.png); }
+.service-icons li.service-pinboard { background-image: url(http://assets.josephholsten.com/images/services/pinboard.png); }
+.service-icons li.service-tumblr { background-image: url(http://assets.josephholsten.com/images/services/tumblr.png); }
+.service-icons li.service-webmin { background-image: url(http://assets.josephholsten.com/images/services/webmin.png); }
+.service-icons li.service-wordpress { background-image: url(http://assets.josephholsten.com/images/services/wordpress.png); }
+
+.action-stream-list .hentry abbr.published {display:none;}

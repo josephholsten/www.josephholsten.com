@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<link href="./styles/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./styles/action-streams.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./styles/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width:480px)" />
+		<link href="http://assets.josephholsten.com/images/identity.png" rel="apple-touch-icon" type="image/png" />
+		<link href="http://assets.josephholsten.com/images/identity.png" rel="icon" type="image/png" />
+
+		<link href="./styles/resume.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./styles/resume-print.css" rel="stylesheet" type="text/css" media="print">
+
+		<title>Resume</title>
+	</head>
+	<body>
+		<div class="page">
+			<div class="hresume">
+				<div class="vcard" id="header">
+					<h1 class="fn n"><a class="url" rel="me" href="http://josephholsten.com/">
+						<span class="given-name">Joseph Anthony Pasquale</span>
+						<span class="family-name">Holsten</span>
+					</a></h1>
+				</div>
+
+				<div id="pdf-download">
+					<a href="/files/resume.pdf" title="Download in PDF format"><img src="http://assets.josephholsten.com/images/pdficon_large.gif" alt="Download in PDF format"></a>
+				</div>
+			<!--
+				<div class="section">
+					 <h2 class="heading">Objective</h2>
+
+					<p>To work on challenging web projects, using good technology to let users get what they want.</p>
+							</div>
+			-->
+				<div class="section">
+					<h2 class="heading">Skills</h2>
+					<ul id="skills" class="simple">
+
+						<li>
+							<h3>Programming Languages</h3>
+							Significant experience with
+								Ruby,
+								Portable Bourne Shell and
+								Javascript.
+							Some experience with
+								<span class="caps">Go</span>,
+								<span class="caps">C</span>,
+								<span class="caps">PHP</span>,
+								<span class="caps">C#</span>.
+								<span class="caps">SQL</span>,
+								Java.
+							Merely dangerous in
+								Python,
+								Scheme,
+								M4,
+								Perl,
+								Haskell,
+								Erlang,
+								<span class="caps">TCL</span> and
+								Awk.
+						</li>
+
+						<li>
+							<h3>Operations</h3>
+							Significant experience with
+								Configuration Management (Chef, Salt, Ansible),
+								<span class="caps">HTTP</span> Servers (Apache, Nginx),
+								Package Management (<span class="caps">Deb</span>, MacPorts, Ruby Gems, <span class="caps">RPM</span>),
+								Process Management (Upstart, Systemd, Monit) and
+								Logging (RSyslog, Logstash, Loggly),
+								Network Monitoring (Nagios, Server Density) and
+								Rsync.
+							Some experience with
+								Firewalls (IPFilter, <span class="caps">IPF</span>),
+								Relational Databases (<span class="caps">PostgreSQL</span>, <span class="caps">MySQL</span>, <span class="caps">SQL</span> Server).
+							Merely dangerous with
+								<span class="caps">LDAP</span>,
+								<span class="caps">VPN</span>,
+								Intrusion Detection and
+								Single Sign On.
+						</li>
+
+						<li>
+							<h3>Web technologies</h3>
+							Significant experience with
+								<span class="caps">HTTP</span>,
+								<span class="caps">REST</span>,
+								<span class="caps">HTML</span>,
+								<span class="caps">DOM</span> and
+								<span class="caps">XML</span>(incl. Namespaces).
+							Some experience with
+								<span class="caps">CSS</span>,
+								<span class="caps">SAX</span> and
+								<span class="caps">AJAX</span>.
+							Merely dangerous with
+								<span class="caps">RDF</span>,
+								<span class="caps">SOAP</span> and
+								<span class="caps">WSDL</span>.
+						</li>
+
+						<li>
+							<h3>Operating Systems</h3>
+							Significant experience with
+								<span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>,  <span class="caps">OS X</span> and Solaris).
+							Some experience with
+								Windows (<span class="caps">NT</span> 4 and 2000 admin, 2003 dev).
+							Want excuses to play with
+								Plan 9 and
+								<span class="caps">IBM</span> i (née <span class="caps">AS/400</span>).
+						</li>
+
+						<li>
+							<h3>Software engineering</h3>
+							Significant experience with
+								Model-View-Controller (Rails, Backbone, AngularJS),
+								Test Driven Development (rspec, cucumber, xUnit),
+								Continuous Delivery (Jenkins, Rake, Make) and
+								Queueing (RabbitMQ, Redis pubsub, ØMQ).
+							Some experience with
+								Evented concurrency (Node.js).
+							Merely dangerous with
+								Key-Value databases and
+								Document databases.
+						</li>
+
+					</ul>
+				</div>
+				<div class="section">
+					<h2>Experience</h2>
+					<ul id="jobs">
+
+					<!-- Job template
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">…</span>,
+								<span class="org">…</span>
+								<span class="location">…</span>
+								<span class="dates"><abbr class="dtstart" title="…">…</abbr> &ndash; <abbr class="dtend" title="…">…</abbr></span>
+							</h3>
+							<p class="description">…</p>
+							<ul class="achievements">
+								<li>…</li>
+							</ul>
+						</li>
+					-->
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Infrastucture Engineer</span>,
+								<span class="org"><a href="http://simplymeasured.com/">Simply Measured</a></span>
+								<!-- <span class="location">Seattle, WA</span> -->
+								<span class="dates"><abbr class="dtstart" title="2012-02-21">Feb 14</abbr> &ndash; <abbr class="dtend" title="2014-08-04">Aug 14</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Infrastructure buildout, maintenance, and automation: Designed, built and maintained systems to run internal applications and support services. Maintained ~500 servers and ~50 internal applications, averaging a 150 server-to-admin ratio.</li>
+								<li>Metrics and reporting: Provided services for measuring and reporting performance and usage of internal applications.</li>
+								<li>Documentation: developed, maintained and trained in procedures for using infrastructure and internal support services. Developed ~100 standard operating procedures and supported ~45 engineers.</li>
+								<li>Emergency response: developed and maintained on-call processes for engineering teams to respond to their respective application and infrastructure failures.</li>
+							</ul>
+						</li>
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Developer</span>
+								<span class="org"><a href="http://www.newmedio.com/">New Medio</a></span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2011-08-01">Aug 11</abbr> &ndash; <abbr class="dtend" title="2012-01-01">Jan 12</abbr></span>
+							</h3>
+							<p class="description">In charge of implementing CMS designs.</p>
+						</li>
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Operations Guy</span>
+								<span class="org">Bitp.it</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2011-02-10">Feb 11</abbr> &ndash; <abbr class="dtend" title="2011-08-01">Aug 11</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Developed, implemented fully automated deployments using <a href="http://git-scm.com/">git</a>, <a href="http://wiki.opscode.com/display/chef">chef</a></li>
+								<li>Ran a node.js service on a single no.de server handling over 400 requests per second</li>
+								<li>Ran a bitcoin mining pool at 100 GHash per second</li>
+							</ul>
+						</li>
+
+						<li class="pending experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3><span class="title">Senior Engineer</span>,
+							<span class="org"><a href="http://waterfieldtechnologies.com/">Waterfield Technologies, Inc</a></span>
+							<!-- <span class="location">Tulsa, OK</span> -->
+							<span class="dates"><abbr class="dtstart" title="2007-04-27">May 07</abbr> &ndash; <abbr class="dtend" title="2011-09-09">Sept 11</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Developed, implemented fully automated deployment strategies using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">VMWare</a>, <a href="http://git-scm.com/">git</a>, <a href="http://wiki.opscode.com/display/chef">chef</a>, and <a href="http://capify.org/">capistrano</a></li>
+								<li>Developed banking and energy sites using SharePoint, <span class="caps">ASP.NET</span>, Ruby on Rails</li>
+								<li>Automated testing, continuous integration site monitoring with <a href="http://cukes.info/">Cucumber</a>, <a href="http://rspec.info/">RSpec</a>, NUnit, <a href="http://cruisecontrolrb.thoughtworks.com/">CruiseControl</a></li>
+								<li>Developed a content publishing service with <abbr title="Javascript Object Notation" class="caps">JSON</abbr>, <abbr title="Hypertext Markup Language" class="caps">HTML</abbr> &amp; <span class="caps">SOAP</span> interfaces</li>
+							</ul>
+						</li>
+						
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3><span class="title">Engineer</span>,
+								<span class="org"><a href="http://mobicentric.com/">Mobicentric</a></span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2009-10-12">Oct 09</abbr> &ndash; <abbr class="dtend" title="2010-8-31">Aug 10</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Developed a mobile real estate listing service for real estate agents</li>
+								<li>Optimized a pure ruby RETS client to process ~6000 listings and ~60000 images per day on a single heroku worker</li>
+							</ul>
+						</li>
+
+						<li class="pending experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Web Programmer</span>,
+								<span class="org">Toydrum, Inc</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2007-01-01">Jan 07</abbr> &ndash; <abbr class="dtend" title="2007-04-01">May 07</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Developed community item trading site using <span class="caps">PHP</span>, Zend framework</li>
+								<li>Implemented double entry accounting, folksonomies, event based messaging</li>
+							</ul>
+						</li>
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Web Designer</span>,
+								<span class="org">DoubleShot Coffee</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2006-09-01">Fall 06</abbr> &ndash; Present</span>
+							</h3>
+					
+							<ul class="acheivements">
+								<li>Developed their internet identity</li>
+								<li>Designed their blog with <abbr title="Cascading Style Sheets" class="caps">CSS</abbr>, Blogger templates</li>
+								<li>Integrated with Flickr integration, Paypal integration</li>
+								<li>Site administration, <abbr title="Active Server Pages" class="caps">ASP</abbr>, <span class="caps">PHP</span></li>
+							</ul>
+						</li>
+
+						<li class="pending experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Web Developer</span>,
+								<span class="org">Thirst Wine</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2007-12-01">Dec 07</abbr> &ndash; <abbr class="dtend" title="2008-03-01">Mar 08</abbr></span>
+							</h3>
+							<ul>
+								<li>Developed content management site using Ruby on Rails</li>
+								<li>Implemented authentication, protected assets, email notifications</li>
+								<li>Converted table based design to <abbr title="Cascading Style Sheets" class="caps">CSS</abbr></li>
+							</ul>
+						</li>
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Web Programmer</span>,
+								<span class="org">Midwest Publishing</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2006-01-01">Jan 06</abbr></span>
+							</h3>
+							<ul>
+								<li>Converted paper based questionnaires to web forms using perl</li>
+							</ul>
+						</li>
+
+						<li class="experience vevent vcard">
+							<a href="#name" class="include"></a>
+							<h3>
+								<span class="title">Network Administrator</span>,
+								<span class="org">Christ United Methodist Church</span>
+								<!-- <span class="location">Tulsa, OK</span> -->
+								<span class="dates"><abbr class="dtstart" title="2003-06-01">Jun 03</abbr> &ndash; <abbr class="dtend" title="2004-09-01">Sep 04</abbr></span>
+							</h3>
+							<ul class="achievements">
+								<li>Upgraded existing systems in software and hardware</li>
+								<li>Administered File, Printing, <span class="caps">DNS</span>, Active Directory Services</li>
+								<li>Documented existing settings and changes for posterity</li>
+								<li>Completed 20 node Learning Lab Installation</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+				<div class="section vcalendar">
+					<h2 class="heading">Education</h2>
+					<ul class="history vcalendar simple">
+
+						<li class="education vevent vcard">
+							<a href="#name" class="include"></a>
+							<span class="focus">Computer Science</span>,
+							<span class="org">Oklahoma State University</span>
+							<span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
+							<span class="dates"><abbr class="dtstart" title="2005-09-01">05</abbr> &ndash; <abbr class="dtend" title="2010-05-01">10</abbr></span>
+						</li>
+
+						<li class="education vevent vcard">
+							<a href="#name" class="include"></a>
+							<span class="focus">Cisco Network Academy</span>,
+							<span class="org">Tulsa Technology Center</span>,
+							<span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
+							<span class="dates"><abbr class="dtstart" title="2002">02</abbr> &ndash; <abbr class="dtend" title="2003">03</abbr></span>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="section">
+					<h2 class="heading">Interests</h2>
+					<ul id="interests" class="simple">
+						<li>Web Standards, Information Architecture, User Experience</li>
+						<li>Espresso, Cigars, Food, and Flavor</li>
+						<li>Boy Scouts of America, as an Eagle Scout</li>
+					</ul>
+				</div>
+
+				<div class="section">
+					<h2 class="heading">Affiliations</h2>
+						<ul id="affiliations" class="simple">
+
+						<!--
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<h3>
+									<span class="title"></span>,
+									<span class="org"></span>
+									<span class="dates"><abbr class="dtstart" title=""></abbr>&ndash<abbr class="dtend" title=""></abbr></span>
+								</h3>
+							</li>
+						-->
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Member</span>,
+								<span class="org caps">OASIS</span>
+								<span class="dates"><abbr class="dtstart" title="2008-11-01">08</abbr> &ndash;  <abbr class="dtstart" title="2010-11-01">10</abbr></span>
+								<span class="comment">[<a href="http://www.oasis-open.org/committees/membership.php?wg_abbrev=xri" class="caps">XRI</a>]</span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Contributor</span>,
+								<span class="org caps">IETF</span>
+								<span class="dates"><abbr class="dtstart" title="2009-01">09</abbr></span>
+								<span class="comment">[<a href="http://tools.ietf.org/html/draft-hammer-discovery">Disco</a>, <a href="http://tools.ietf.org/html/draft-holsten-about-uri-scheme">About:</a>]</span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Technology Director</span>,
+								<span class="org">Tulsa Sharepoint User Group</span>
+								<span class="dates"><abbr class="dtstart" title="2006-01-01">06</abbr> &ndash; <abbr class="dtend" title="2008-09-01">08</abbr></span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Contributor</span>,
+								<span class="org">OAuth Extensions</span>
+								<span class="dates"><abbr class="dtstart" title="2003">08</abbr></span>
+								<span class="comment">[<a href="http://oauth.googlecode.com/svn/spec/ext/session/1.0/drafts/1/spec.html">Session</a>,
+									<a href="http://oauth.googlecode.com/svn/spec/ext/language_preference/1.0/drafts/2/spec.html">Language</a>,
+									<a href="http://wiki.oauth.net/ScalableOAuth">Scalable</a>]</span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Contributor</span>,
+								<span class="org">Ruby on Rails</span>
+								<span class="dates"><abbr class="dtstart" title="2008-11-01">08</abbr></span>
+								<span class="comment">[<a href="http://github.com/rails/rails/commit/fea8d9d06ffaf85eb9e590ae3ac7cf082ad0c420">XmlMini</a>]</span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Organizer</span>,
+								<span class="org">Tulsa 2600</span>
+								<span class="dates"><abbr class="dtstart" title="2000-01-01">00</abbr> &ndash; <abbr class="dtstart" title="2008-01-01">08</abbr></span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Eagle Scout</span>,
+								<span class="org">Troop 73</span>
+								<span class="dates"><abbr class="dtstart" title="2004-01-01">04</abbr></span>
+							</li>
+
+							<li class="affiliation vevent vcard">
+								<a href="#name" class="include"></a>
+								<span class="title">Chief</span>,
+								<span class="org">Eagle District, Order of the Arrow</span>
+								<span class="dates"><abbr class="dtstart" title="2003">03</abbr></span>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="section">
+						<h2 class="heading">References</h2>
+
+						<div id="references">
+							<p>Available upon request</p>
+							<!-- Reference Template
+							<dl class="reference vcard">
+								<dt>Name</dt>
+								<dd class="fn">…</dd>
+
+								<dt>Organization</dt>
+								<dd class="org">…</dd>
+
+								<dt>Tel</dt>
+								<dd class="tel">…</dd>
+							</dl>
+							 -->
+
+							<!-- <dl class="reference vcard">
+								<dt>Name</dt>
+								<dd class="fn">Dr. Robert Pierson</dd>
+
+								<dt>Organization</dt>
+								<dd class="org">Christ United Methodist Church</dd>
+
+								<dt>Tel</dt>
+								<dd class="tel">918-747-8601</dd>
+							</dl> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
