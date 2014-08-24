@@ -81,7 +81,7 @@ ul {
 	clear: left;
 	-webkit-column-break-inside: avoid;
 	break-inside: avoid;
-	page-break-inside: avoid;
+//	page-break-inside: avoid;
 }
 	.xoxo h2,
 	.section h2 {

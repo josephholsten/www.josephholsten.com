@@ -17,8 +17,7 @@
 
 /* Layout */
 .page {
-	min-height: 257mm;
-        z-index: 0;
+	z-index: 0;
 }
 
 .section p {
