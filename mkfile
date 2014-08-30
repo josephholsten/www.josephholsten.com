@@ -1,10 +1,8 @@
 PRINCE=prince
-
-FILEDIR=files
 RESUMES=`ls resume*.html`
-PDFS=${RESUMES:%.html=$FILEDIR/%.pdf}
+PDFS=${RESUMES:%.html=files/%.pdf}
 
-$FILEDIR/%.pdf: %.html
+files/%.pdf: %.html
 	$PRINCE $prereq -o $target
 
 all:V: $PDFS
