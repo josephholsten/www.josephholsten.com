@@ -17,7 +17,5 @@ ul {
 }
 
 #profiles ul, ul.xoxo {
-	-moz-column-count: 1;
-	-webkit-column-count: 1;
 	column-count: 1;
 }

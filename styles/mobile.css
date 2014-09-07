@@ -1,6 +1,5 @@
 /* Reset */
 .page {
-  -webkit-box-shadow: none;
   margin: 0px;
   padding: 0px;
   border-width: none;
@@ -37,7 +36,6 @@ a
 body
 {
   margin: 0px 10px;
-  -webkit-text-size-adjust: none;
   font-family: Helvetica;
   font-weight: bold;
   font-size: 17px;
@@ -54,7 +52,7 @@ ul
   padding: 0;
   margin-top:0;
   border-width: 1px;
-  border-style:solid ;
+  border-style: solid;
   -webkit-border-radius: 8px;
 }
 

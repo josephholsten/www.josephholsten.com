@@ -8,15 +8,13 @@ body {
 	border: black 1px;
 	background: white;
 	width: 100%;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 	margin: 0em auto;
 	padding: 0mm;
 }
 
 #pdf-download {
-	display: none;
+	display: none !important;
 }
 
 iframe {

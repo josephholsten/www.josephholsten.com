@@ -2,12 +2,14 @@
 
 #pdf-download {
   position: relative;
-  top: -0.5em;
-  left: 11.4em;
-  float:left;
+  float: right;
 }
 
-#pdf-download img {border: none;}
+  #pdf-download img {
+    border: none;
+    width: 32px;
+    height: 32px;
+  }
 
 /* Type */
 .section h3 .example-url{
