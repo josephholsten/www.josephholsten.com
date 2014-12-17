@@ -46,7 +46,23 @@ evented concurrency, key-value databases & document databases.
 
 ## Experience
 
-Infrastucture Engineer, Simply Measured. 2012-02 – 2014-08.
+Infrastructure Engineer, Ensighten. 2012-11 – Present.
+-   Infrastructure buildout, maintenance, & automation: Converting
+    ~500 servers to be automated using puppet.
+
+-   Infrastructure buildout, maintenance, & automation: Designed, built
+    and maintained systems to run internal applications and support
+    services. Maintained ~500 servers and ~50 internal applications,
+    averaging a 150 server-to-admin ratio.
+-   Metrics & reporting: Provided services for measuring and reporting
+    performance and usage of internal applications.
+-   Education: developed, maintained and trained in procedures for using
+    infrastructure and internal support services. Developed ~100
+    standard operating procedures and supported ~45 engineers.
+-   Emergency response: developed and maintained on-call processes for
+    engineering teams to respond to their respective application and
+    infrastructure failures.
+Infrastructure Engineer, Simply Measured. 2012-02 – 2014-08.
 
 -   Infrastructure buildout, maintenance, & automation: Designed, built
     and maintained systems to run internal applications and support
