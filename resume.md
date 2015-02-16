@@ -46,7 +46,7 @@ evented concurrency, key-value databases & document databases.
 
 ## Experience
 
-Infrastructure Engineer, Ensighten. 2012-11 – Present.
+Infrastructure Engineer, Ensighten. 2014-11 – Present.
 -   Infrastructure buildout, maintenance, & automation: Converting
     ~500 servers to be automated using puppet.
 
