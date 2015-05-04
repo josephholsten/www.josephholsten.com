@@ -47,9 +47,9 @@ evented concurrency, key-value databases & document databases.
 ## Experience
 
 Infrastructure Engineer, Ensighten. 2014-11 – Present.
+
 -   Infrastructure buildout, maintenance, & automation: Converting
     ~500 servers to be automated using puppet.
-
 -   Infrastructure buildout, maintenance, & automation: Designed, built
     and maintained systems to run internal applications and support
     services. Maintained ~500 servers and ~50 internal applications,
@@ -62,6 +62,7 @@ Infrastructure Engineer, Ensighten. 2014-11 – Present.
 -   Emergency response: developed and maintained on-call processes for
     engineering teams to respond to their respective application and
     infrastructure failures.
+
 Infrastructure Engineer, Simply Measured. 2012-02 – 2014-08.
 
 -   Infrastructure buildout, maintenance, & automation: Designed, built
