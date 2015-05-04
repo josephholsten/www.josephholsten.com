@@ -1,0 +1,109 @@
+@import "font-awesome"
+
+body
+  font-size:    11pt
+  font-family:  "Palatino"
+  background:   grey
+  color:        black
+
+.caps
+  font-size: 85%
+
+.page
+  border-color:  dimgray
+  background:    white
+  width:         45em
+  margin:        2em auto
+  padding:       5em
+  box-shadow:    0px 4px 4px black
+
+a
+  color:            black
+  text-decoration:  none
+  &:hover
+    color:            blue
+    text-decoration:  underline
+
+ul
+  list-style: none
+
+header, #header
+  h1
+    font-size: 2em
+    margin: 0
+    padding: 0
+    float: left
+  ul
+    margin: 0
+    padding: 0
+    clear: left
+  img
+    width: 115px
+    height: 115px
+    float: right
+  div
+    display: inline-block
+
+section, .section
+  clear: left
+  break-inside: avoid
+  h2
+    border-bottom-color: black
+    font-size: 1.5em
+    margin: 1em 0 0 0
+    border-bottom-width: 1px
+    border-bottom-style: solid
+  ul
+    margin: 0
+    padding: 0
+
+i.fa
+  width: 1em
+  color: lightslategray
+  text-align: center
+  &:after
+    content: " "
+
+.resume
+  #pdf-download 
+    position: relative
+    float: right
+    img
+      border: none
+      width: 32px
+      height: 32px
+  .page
+    z-index: 0
+  section
+    p
+      margin: 1em 0 0 0
+    h3
+      font-size: 1em
+      margin: 1em 0 0 0
+      position: relative
+      .dates
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+    ul ul
+      margin: 0
+      padding: 0 0 0 1em
+    abbr
+      border: 0
+    .simple
+      li
+        font-size: 1em
+        margin: 0.5em 0 0 0
+        position: relative
+      .dates
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+      .vcard, .h-card
+        .p-description
+          color: #888
+          font-size: 80%
+        .p-description *
+          color: #888

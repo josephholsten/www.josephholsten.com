@@ -1,0 +1,67 @@
+@media only screen and (max-device-width: 480px)
+  .page
+    margin: 0px
+    border-width: none
+    font-size: inherit
+    background: transparent
+    width: inherit
+    padding: 0.5em 1em
+
+  // Color
+  $jh-bg-gray: #C5CCD3
+  $jh-h-slate: #4C566C
+
+  body
+    background-color: $jh-bg-gray
+    font:
+      family: "Lucida Grande"
+      size: 16px
+    width: 100%
+
+  h1
+    color: $jh-h-slate
+    margin-right: 115px !important
+
+  h2, h3, .section h2, section h2
+    margin-top: 0.5em
+    border: none
+
+  ul
+    background-color: white
+    border:
+      color: lightgrey
+      width: 1px
+      style: solid
+      radius: 8px
+
+  li
+    background-color: transparent
+    border-top:
+      color: lightgrey
+      width: 1px
+      style: solid
+    padding:
+      top: 0.5em
+      bottom: 0.5em
+      left: 0.5em
+    &:first-child
+      border-top: 0
+    overflow: hidden
+
+  a
+    color: black
+
+  input[type="search"]
+    margin-top: 1em
+    width: 100%
+    border-radius: 8px
+
+  #avatar
+    position: absolute
+    top: 0px
+    right: -33px
+    border:
+      width: 1px
+      color: slategray
+      style: solid
+    border-bottom-left-radius: 12px
