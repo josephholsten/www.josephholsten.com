@@ -40,7 +40,7 @@ title: Resume
         Some experience with
         <span class="caps">C</span>,
         Python,
-        <span class="caps">SQL</span>,
+        <span class="caps">SQL</span> &amp;
         Java.
         Merely dangerous in
         Scheme,
@@ -51,17 +51,15 @@ title: Resume
       <li>
         <h3>Operations</h3>
         Significant experience with
+        Continuous Delivery (Jenkins, Rundeck, Travis),
+        Containers (Docker, Illumos Zones),
+        Service Discovery (Consul, custom),
         Configuration Management (Chef, Puppet, Ansible),
-        <span class="caps">HTTP</span> Servers (Apache, Nginx),
         Network Monitoring (Sensu, Nagios, Server Density),
         Metric Timeseries (Graphite, Librato),
-        Service Discovery (Consul, custom),
-        Queue Brokers (RabbitMQ, Kafka, Redis),
         Log Management (Logstash, RSyslog, Papertrail),
-        Package Management (<span class="caps">Deb</span>, MacPorts, Ruby Gems, <span class="caps">RPM</span>),
-        Process Management (Systemd, Daemontools, Monit),
-        and
-        Rsync.
+        <span class="caps">HTTP</span> Servers (Apache, Nginx) &amp;
+        Queue Brokers (RabbitMQ, Kafka, Redis).
         Some experience with
         Firewalls (IPFilter, <span class="caps">IPF</span>),
         Relational Databases (<span class="caps">PostgreSQL</span>, <span class="caps">MySQL</span>, <span class="caps">SQL</span> Server).
@@ -69,7 +67,6 @@ title: Resume
         Hadoop,
         Cassandra,
         <span class="caps">LDAP</span>,
-        Active Directory,
         <span class="caps">VPN</span>,
         Intrusion Detection &amp;
         Single Sign On.
@@ -95,7 +92,7 @@ title: Resume
       <li>
         <h3>Operating Systems</h3>
         Significant experience with
-        <span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>, <span class="caps">OS X</span> &amp; Solaris).
+        <span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>, <span class="caps">OS X</span>, Illumos).
         Some experience with
         Windows (Server 2012 R2).
         Want excuses to play with
@@ -136,6 +133,17 @@ title: Resume
         </ul>
         </li>
       -->
+      <li class="p-experience h-event h-card">
+        <h3>
+          <span class="p-job-title">Software Engineer</span>,
+          <span class="p-org"><a href="http://lovable.tech/">Lovable Technology</a></span>
+          <!-- <span class="p-location">Remote</span> -->
+          <span class="dates"><time class="dt-start" datetime="2017-03-14">2017-03</time> &ndash; Present</span>
+        </h3>
+        <ul class="p-description">
+          <li>Contracted with Oracle to implement a Go SDK and <a href="https://github.com/oracle/terraform-provider-baremetal">Terraform Provider for Oracle Bare Metal Cloud</a>.</li>
+        </ul>
+      </li>
 
       <li class="p-experience h-event h-card">
         <h3>
@@ -145,10 +153,10 @@ title: Resume
           <span class="dates"><time class="dt-start" datetime="2014-11-01">2014-11</time> &ndash; <time class="dt-end" datetime="2017-03-07">2017-03</time></span>
         </h3>
         <ul class="p-description">
-          <li>Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using Terraform for provisioning, Puppet for platform config &amp; Ansible for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.</li>
-          <li>Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using Sensu &amp; Graphite.</li>
-          <li>Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the UltraDNS &amp; NS1 providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.</li>
-          <li>Tooling development: Implemented &amp; maintained Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.
+          <li>Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using <a href="https://www.terraform.io/">Terraform</a> for provisioning, <a href="https://puppet.com/">Puppet</a> for platform config &amp; <a href="https://www.ansible.com/">Ansible</a> for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.</li>
+          <li>Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using <a href="https://sensuapp.org/">Sensu</a> &amp; <a href="http://graphiteapp.org/">Graphite</a>.</li>
+          <li>Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the <a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a> &amp; <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a> providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.</li>
+          <li>Tooling development: Implemented &amp; maintained UltraDNS and NS1 Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.
         </ul>
       </li>
       <li class="p-experience h-event h-card">
@@ -168,7 +176,7 @@ title: Resume
 
       <li class="p-experience h-event h-card">
         <h3>
-          <span class="p-job-title">Founder, Operations Guy</span>,
+          <span class="p-job-title">Founder, Operations Engineer</span>,
           <span class="p-org">Bitp.it</span>
           <!-- <span class="p-location">Tulsa, OK</span> -->
           <span class="dates"><time class="dt-start" datetime="2011-02-10">2011-02</time> &ndash; <time class="dt-end" datetime="2011-08-01">2011-08</time></span>
@@ -180,7 +188,7 @@ title: Resume
         </ul>
       </li>
 
-      <li class="p-experience h-event h-card">
+      <li class="p-experience h-event h-card next-page">
         <h3><span class="p-job-title">Senior Engineer</span>,
           <span class="p-org"><a href="http://waterfieldtechnologies.com/">Waterfield Technologies, Inc</a></span>
           <!-- <span class="p-location">Tulsa, OK</span> -->
@@ -213,9 +221,9 @@ title: Resume
     </ul>
   </section>
 
-  <section class="next-page">
+  <section>
     <h2>Open Source & Community Contributions</h2>
-    <p>Most of my open source contributions are visible at <a href='https://github.com/josephholsten/'>https://github.com/josephholsten/</a>, off-GitHub contributions follow:</p>
+    <p>Most of my open source contributions are visible at <a href='https://github.com/josephholsten/'>GitHub</a>, notable contributions include:</p>
     <ul id="affiliations" class="simple">
 
       <!--
@@ -229,11 +237,17 @@ title: Resume
       -->
 
       <li class="p-affiliation h-event h-card">
-        <span class="p-name">Founder &amp; Board Member</span>,
-        <span class="p-org"><a href="http://sous-chefs.org/">Sous Chefs</a></span>
-        <span class="dates"><time class="dt-start" datetime="2015-05-10">2015</time></span>
+        <span class="p-name">Founder</span>,
+        <span class="p-org"><a href="http://github.com/sous-chefs">Sous Chefs</a></span>
+        <span class="dates"><time class="dt-start" datetime="2015-05-10">2015</time> &ndash; Present</span>
       </li>
 
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
+        <span class="p-org">terraform</span>
+        <span class="dates"><time class="dt-start" datetime="2014-11-25">2014</time> &ndash; Present</span>
+        <span class="p-description">[<a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a>, <a href="https://github.com/hashicorp/terraform/commits?author=josephholsten">core</a>]</span>
+      </li>
 
       <li class="p-affiliation h-event h-card">
         <span class="p-name">Contributor</span>,
@@ -252,7 +266,7 @@ title: Resume
       <li class="p-affiliation h-event h-card">
         <span class="p-name">Contributor</span>,
         <span class="p-org caps">OASIS</span>
-        <span class="dates"><time class="dt-start" datetime="2008-11-01">2008</time> &ndash;  <time class="dt-start" datetime="2010-11-01">10</time></span>
+        <span class="dates"><time class="dt-start" datetime="2008-11-01">2008</time> &ndash;  <time class="dt-start" datetime="2010-11-01">2010</time></span>
         <span class="p-description">[<a href="http://docs.oasis-open.org/xri/xrd/v1.0/xrd-1.0.html" class="caps">XRD</a>]</span>
       </li>
 
@@ -295,6 +309,14 @@ title: Resume
         <iframe src="" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </li>
       -->
+
+      <li class="presentation h-event h-card">
+        <span class="p-name">Sous Chefs - Fostering Better Community Cookbooks</span>,
+        <span class="p-org"><a href="https://chefconf.chef.io/2017/">Chef Conf</a></span>
+        <span class="p-description">[<a href="https://youtu.be/k-g3mNO-eN8">video</a>]</span>
+        <span class="dates"><time class="dt-start" datetime="2017-05-24">2017-05-24</time></span>
+        <iframe src="https://www.youtube.com/embed/DYrCP_7_tCok-g3mNO-eN8" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </li>
 
       <li class="presentation h-event h-card">
         <span class="p-name"><a href="http://foodfightshow.org/2017/01/sous-chefs.html">Sous Chefs</a></span>,
