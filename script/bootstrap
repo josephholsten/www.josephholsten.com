@@ -1,3 +1,31 @@
 #!/bin/sh
+set -e # all errors are fatal errors
 
-bundle install --path vendor/bundle
+command_absent() {
+  ! command -v "$1" > /dev/null
+}
+
+if command_absent ruby; then
+  echo 'ruby(1) not found, install with `brew install bundler` or similar'
+  exit 1
+fi
+
+# https://gist.github.com/fnichol/1912050
+DESIRED_RUBY_VERSION="$(cat .ruby-version)"
+if [ "$(ruby -e "puts RUBY_VERSION")" != "$DESIRED_RUBY_VERSION" ]; then
+  echo "ruby(1) in PATH is not version specified in .ruby-version ($DESIRED_RUBY_VERSION), consider using rvm or similar"
+  exit 1
+fi
+
+if command_absent bundle; then
+  echo 'bundle(1) not found, install with `gem install bundler` or similar'
+  exit 1
+fi
+
+
+if command_absent prince; then
+  echo 'prince(1) not found, install with `brew cask install prince` or similar'
+  exit 1
+fi
+
+bundle install --quiet --path vendor/bundle
