@@ -21,7 +21,7 @@ title: Resume
         </ul>
     </div>
     <section id="pdf-download">
-      <a href="files/resume.pdf" title="Download in PDF format"><img src="/images/pdficon_large.gif" alt="Download in PDF format" width="32" height="32" style></a>
+      <a href="files/resume-full.pdf" title="Download in PDF format"><img src="/images/pdficon_large.gif" alt="Download in PDF format" width="32" height="32" style></a>
     </section>
   </header>
 
@@ -56,19 +56,28 @@ title: Resume
       <li>
         <h3>Operations</h3>
         Significant experience with
+        Continuous Delivery (Jenkins, Rundeck, Travis),
+        Containers (Docker, Illumos Zones),
+        Service Discovery (Consul, custom),
         Configuration Management (Chef, Puppet, Ansible),
+        Network Monitoring (Sensu, Nagios, Server Density),
+        Metric Timeseries (Graphite, Librato),
+        Log Management (Logstash, RSyslog, Papertrail),
         <span class="caps">HTTP</span> Servers (Nginx, Apache),
+        Queue Brokers (RabbitMQ, Kafka, Redis),
         Package Management (<span class="caps">Deb</span>, MacPorts, Ruby Gems, <span class="caps">RPM</span>),
-        Process Management (Upstart, Systemd, Monit) &amp;
+        Process Management (Upstart, Systemd, Monit),
         Logging (RSyslog, Logstash, Loggly),
         Network Monitoring (Nagios, Server Density) &amp;
         Rsync.
         Some experience with
+        <span class="caps">VPN</span> (OpenVPN, <span class="caps">IKE</span>v2, Wireguard),
         Firewalls (IPFilter, <span class="caps">IPF</span>),
         Relational Databases (<span class="caps">PostgreSQL</span>, <span class="caps">MySQL</span>, <span class="caps">SQL</span> Server).
         Merely dangerous with
+        Hadoop,
+        Cassandra,
         <span class="caps">LDAP</span>,
-        <span class="caps">VPN</span>,
         Intrusion Detection &amp;
         Single Sign On.
       </li>
@@ -116,21 +125,20 @@ title: Resume
 
     </ul>
   </section>
-
   <section>
     <h2>Experience</h2>
     <ul id="jobs">
 
       <!-- Job template
-        <li class="experience h-event h-card">
+        <li class="p-experience h-event h-card">
         <h3>
         <span class="p-job-title">…</span>,
         <span class="p-org">…</span>
         <span class="p-location">…</span>
         <span class="dates"><time class="dt-start" datetime="…">…</time> &ndash; <time class="dt-end" datetime="…">…</time></span>
         </h3>
-        <p class="description">…</p>
-        <ul class="achievements">
+        <p class="p-description">…</p>
+        <ul class="p-description">
         <li>…</li>
         </ul>
         </li>
@@ -191,10 +199,16 @@ title: Resume
       <li class="pending experience h-event h-card">
         <h3><span class="p-job-title">Senior Engineer</span>,
           <span class="p-org"><a href="http://waterfieldtechnologies.com/">Waterfield Technologies, Inc</a></span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Tulsa</span>,
+            <span class="p-region">OK</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
           <span class="dates"><time class="dt-start" datetime="2007-04-27">2007-04</time> &ndash; <time class="dt-end" datetime="2011-09-09">2011-09</time></span>
         </h3>
-        <ul class="achievements">
+        <ul class="p-description">
           <li>Developed, implemented fully automated deployment strategies using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">VMWare</a>, <a href="http://git-scm.com/">git</a>, <a href="http://wiki.opscode.com/display/chef">chef</a>, &amp; <a href="http://capify.org/">capistrano</a></li>
           <li>Developed banking &amp; energy sites using SharePoint, <span class="caps">ASP.NET</span>, Ruby on Rails</li>
           <li>Automated testing, continuous integration site monitoring with <a href="http://cukes.info/">Cucumber</a>, <a href="http://rspec.info/">RSpec</a>, NUnit, <a href="http://cruisecontrolrb.thoughtworks.com/">CruiseControl</a></li>
@@ -202,13 +216,19 @@ title: Resume
         </ul>
       </li>
 
-      <li class="experience h-event h-card">
+      <li class="p-experience h-event h-card">
         <h3><span class="p-job-title">Engineer</span>,
           <span class="p-org"><a href="http://mobicentric.com/">Mobicentric</a></span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Tulsa</span>,
+            <span class="p-region">OK</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
           <span class="dates"><time class="dt-start" datetime="2009-10-12">2009-10</time> &ndash; <time class="dt-end" datetime="2010-08-31">2010-08</time></span>
         </h3>
-        <ul class="achievements">
+        <ul class="p-description">
           <li>Developed a mobile real estate listing service for real estate agents</li>
           <li>Optimized a pure ruby RETS client to process ~6000 listings &amp; ~60000 images per day on a single heroku worker</li>
         </ul>
@@ -287,84 +307,76 @@ title: Resume
     </ul>
   </section>
 
-  <section class="vcalendar">
-    <h2>Education</h2>
-    <ul class="history vcalendar simple">
-
-      <li class="education h-event h-card">
-        <span class="focus">Computer Science</span>,
-        <span class="p-org">Oklahoma State University</span>
-        <span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
-        <span class="dates"><time class="dt-start" datetime="2005-09-01">2005</time> &ndash; <time class="dt-end" datetime="2010-05-01">2010</time></span>
-      </li>
-
-      <li class="education h-event h-card">
-        <span class="focus">Cisco Network Academy</span>,
-        <span class="p-org">Tulsa Technology Center</span>,
-        <span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
-        <span class="dates"><time class="dt-start" datetime="2002">2002</time> &ndash; <time class="dt-end" datetime="2003">2003</time></span>
-      </li>
-
-    </ul>
-  </section>
-
   <section>
-    <h2>Open Source Contributions</h2>
+    <h2>Open Source & Community Contributions</h2>
     <p>Most of my open source contributions are visible at <a href='https://github.com/josephholsten/'>https://github.com/josephholsten/</a>, off-github contributions follow:</p>
     <ul id="affiliations" class="simple">
 
       <!--
-        <li class="affiliation h-event h-card">
+        <li class="p-affiliation h-event h-card">
         <h3>
-        <span class="title"></span>,
+        <span class="p-name"></span>,
         <span class="p-org"></span>
         <span class="dates"><time class="dt-start" datetime=""></time>&ndash<time class="dt-end" datetime=""></time></span>
         </h3>
         </li>
       -->
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Founder</span>,
+        <span class="p-org"><a href="http://github.com/sous-chefs">Sous Chefs</a></span>
+        <span class="dates"><time class="dt-start" datetime="2015-05-10">2015</time> &ndash; Present</span>
+      </li>
+
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
+        <span class="p-org">terraform</span>
+        <span class="dates"><time class="dt-start" datetime="2014-11-25">2014</time> &ndash; Present</span>
+        <span class="p-description">[<a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a>, <a href="https://github.com/hashicorp/terraform/commits?author=josephholsten">core</a>]</span>
+      </li>
+
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org">glibc</span>
         <span class="dates"><time class="dt-start" datetime="2014-04-11">2014</time></span>
-        <span class="comment">[<a href="https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=c12e9f37417240a086c5b9e2fb321f1db8e9547f;hp=439bda3209b768c349b98b8ceecf0fa8d94600e9">commitdiff</a>]</span>
+        <span class="p-description">[<a href="https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=c12e9f37417240a086c5b9e2fb321f1db8e9547f;hp=439bda3209b768c349b98b8ceecf0fa8d94600e9">commitdiff</a>]</span>
       </li>
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org">go</span>
         <span class="dates"><time class="dt-start" datetime="2013-07-13">2013</time></span>
-        <span class="comment">[<a href="https://code.google.com/p/go/source/detail?name=e8b145221231&r=e8b1452212313491cbfed60cf5601440cf85d0e0">commitdiff</a>]</span>
+        <span class="p-description">[<a href="https://code.google.com/p/go/source/detail?name=e8b145221231&r=e8b1452212313491cbfed60cf5601440cf85d0e0">commitdiff</a>]</span>
       </li>
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org caps">OASIS</span>
-        <span class="dates"><time class="dt-start" datetime="2008-11-01">2008</time> &ndash;  <time class="dt-start" datetime="2010-11-01">10</time></span>
-        <span class="comment">[<a href="http://docs.oasis-open.org/xri/xrd/v1.0/xrd-1.0.html" class="caps">XRD</a>]</span>
+        <span class="dates"><time class="dt-start" datetime="2008-11-01">2008</time> &ndash;  <time class="dt-start" datetime="2010-11-01">2010</time></span>
+        <span class="p-description">[<a href="http://docs.oasis-open.org/xri/xrd/v1.0/xrd-1.0.html" class="caps">XRD</a>]</span>
       </li>
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org caps">IETF</span>
         <span class="dates"><time class="dt-start" datetime="2009-01">2009</time></span>
-        <span class="comment">[<a href="http://tools.ietf.org/html/draft-hammer-discovery">Disco</a>, <a href="http://tools.ietf.org/html/draft-holsten-about-uri-scheme">About:</a>]</span>
+        <span class="p-description">[<a href="http://tools.ietf.org/html/draft-hammer-discovery">Disco</a>, <a href="http://tools.ietf.org/html/draft-holsten-about-uri-scheme">About:</a>]</span>
       </li>
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org">OAuth Extensions</span>
         <span class="dates"><time class="dt-start" datetime="2003">2008</time></span>
-        <span class="comment">[<a href="http://oauth.googlecode.com/svn/spec/ext/session/1.0/drafts/1/spec.html">Session</a>,
+        <span class="p-description">[<a href="http://oauth.googlecode.com/svn/spec/ext/session/1.0/drafts/1/spec.html">Session</a>,
           <a href="http://oauth.googlecode.com/svn/spec/ext/language_preference/1.0/drafts/2/spec.html">Language</a>,
           <a href="http://wiki.oauth.net/ScalableOAuth">Scalable</a>]</span>
       </li>
 
-      <li class="affiliation h-event h-card">
-        <span class="title">Contributor</span>,
+      <li class="p-affiliation h-event h-card">
+        <span class="p-name">Contributor</span>,
         <span class="p-org">Ruby on Rails</span>
         <span class="dates"><time class="dt-start" datetime="2008-11-01">2008</time></span>
-        <span class="comment">[<a href="http://github.com/rails/rails/commit/fea8d9d06ffaf85eb9e590ae3ac7cf082ad0c420">XmlMini</a>]</span>
+        <span class="p-description">[<a href="http://github.com/rails/rails/commit/fea8d9d06ffaf85eb9e590ae3ac7cf082ad0c420">XmlMini</a>]</span>
       </li>
 
     </ul>
@@ -376,46 +388,82 @@ title: Resume
 
       <!--
         <li class="presentation h-event h-card">
-        <span class="title"></span>
+        <span class="p-name"></span>
         <span class="p-org"></span>
-        <span class="comment">[<a href="">video</a>, <a href="">slides</a>]</span>
+        <span class="p-description">[<a href="">video</a>, <a href="">slides</a>]</span>
         <span class="dates"><time class="dt-start" datetime="2014">14</time></span>
         <iframe src="" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </li>
       -->
 
       <li class="presentation h-event h-card">
-        <span class="title">Saturday Night Disco on Monday Morning</span>,
+        <span class="p-name">Sous Chefs - Fostering Better Community Cookbooks</span>,
+        <span class="p-org"><a href="https://chefconf.chef.io/2017/">Chef Conf</a></span>
+        <span class="p-description">[<a href="https://youtu.be/k-g3mNO-eN8">video</a>]</span>
+        <span class="dates"><time class="dt-start" datetime="2017-05-24">2017-05-24</time></span>
+        <iframe src="https://www.youtube.com/embed/k-g3mNO-eN8" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </li>
+
+      <li class="presentation h-event h-card">
+        <span class="p-name"><a href="http://foodfightshow.org/2017/01/sous-chefs.html">Sous Chefs</a></span>,
+        <span class="p-org"><a href="http://foodfightshow.org">Food Fight Show</a></span>
+        <span class="p-description">[<a href="https://youtu.be/DYrCP_7_tCo">video</a>]</span>
+        <span class="dates"><time class="dt-start" datetime="2017-01-06">2017-01-06</time></span>
+        <iframe src="https://www.youtube.com/embed/DYrCP_7_tCo" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </li>
+
+      <li class="presentation h-event h-card">
+        <span class="p-name">Saturday Night Disco on Monday Morning</span>,
         <span class="p-org"><a href="http://devopsdays.org/events/2014-austin/">DevOpsDays Austin</a></span>
-        <span class="comment">[<a href="http://vimeo.com/97659271">video</a>, <a href="https://speakerdeck.com/josephholsten/saturday-night-disco-on-monday-morning">slides</a>]</span>
+        <span class="p-description">[<a href="http://vimeo.com/97659271">video</a>, <a href="https://speakerdeck.com/josephholsten/saturday-night-disco-on-monday-morning">slides</a>]</span>
         <span class="dates"><time class="dt-start" datetime="2014-05-06">2014-05-06</time></span>
         <iframe src="http://player.vimeo.com/video/97659271" width="660" height="371" frameborder="0" allowfullscreen></iframe>
       </li>
 
       <li class="presentation h-event h-card">
-        <span class="title">Becoming Fearlessly Definite &amp; Resourceful</span>,
+        <span class="p-name">Becoming Fearlessly Definite &amp; Resourceful</span>,
         <span class="p-org"><a href="http://chefconf.opscode.com/chefconf/">ChefConf</a></span>
-        <span class="comment">[<a href="https://www.youtube.com/watch?v=QuH1dtRT_oE">video</a>, <a href="https://speakerdeck.com/josephholsten/becoming-fearlessly-definite-and-resourceful">slides</a>]</span>
+        <span class="p-description">[<a href="https://www.youtube.com/watch?v=QuH1dtRT_oE">video</a>, <a href="https://speakerdeck.com/josephholsten/becoming-fearlessly-definite-and-resourceful">slides</a>]</span>
         <span class="dates"><time class="dt-start" datetime="2014-04-17">2014-04-17</time></span>
         <iframe src="http://www.youtube.com/embed/QuH1dtRT_oE" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </li>
 
       <li class="presentation h-event h-card">
-        <span class="title">Services in Go: from Proof-of-Concept to Production</span>,
+        <span class="p-name">Services in Go: from Proof-of-Concept to Production</span>,
         <span class="p-org"><a href="http://golangvan.org">GolangVan</a></span>
-        <span class="comment">[<a href="https://www.youtube.com/watch?v=XVXUYLSW_eg">video</a>, <a href="http://go-talks.appspot.com/github.com/josephholsten/prod-ready-go-svcs/prod-ready-svcs.slide#1">slides</a>]</span>
+        <span class="p-description">[<a href="https://www.youtube.com/watch?v=XVXUYLSW_eg">video</a>, <a href="http://go-talks.appspot.com/github.com/josephholsten/prod-ready-go-svcs/prod-ready-svcs.slide#1">slides</a>]</span>
         <span class="dates"><time class="dt-start" datetime="2014-02-05">2014-02-05</time></span>
         <iframe src="http://www.youtube.com/embed/XVXUYLSW_eg" width="660" height="371" frameborder="0" allowfullscreen></iframe>
       </li>
     </ul>
   </section>
 
+  <section class="vcalendar">
+    <h2>Education</h2>
+    <ul class="history vcalendar simple">
+
+      <li class="p-education h-event h-card">
+        <span class="focus">BS Computer Science</span>,
+        <span class="p-org">Oklahoma State University</span>
+        <span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
+        <span class="dates"><time class="dt-start" datetime="2005-09-01">2005</time> &ndash; <time class="dt-end" datetime="2010-05-01">2010</time></span>
+      </li>
+
+      <li class="p-education h-event h-card">
+        <span class="focus">Cisco Network Academy</span>,
+        <span class="p-org">Tulsa Technology Center</span>,
+        <span class="adr">Tulsa, <abbr title="Oklahoma" class="caps">OK</abbr></span>
+        <span class="dates"><time class="dt-start" datetime="2002">2002</time> &ndash; <time class="dt-end" datetime="2003">2003</time></span>
+      </li>
+
+    </ul>
+  </section>
+
   <section>
     <h2>Interests</h2>
     <ul id="interests" class="simple">
-      <li>Augmented Reality, Digital Contracts, Digital Reputation</li>
-      <li>Espresso, Cigars, Food, and Flavor</li>
-      <li>Community Organizing, Volunteering and Open Source</li>
+      <li>Augmented Reality, Digital Contracts &amp; Reputation</li>
+      <li>Community Organizing, Volunteering &amp; Open Source</li>
     </ul>
   </section>
 
@@ -450,3 +498,6 @@ title: Resume
     </div>
   </section>
 </div>
+<script>
+analytics.track('jh-com.resume', { value: 1 });
+</script>
