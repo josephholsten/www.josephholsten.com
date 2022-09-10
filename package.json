@@ -1,0 +1,29 @@
+{
+  "name": "www.josephholsten.com",
+  "version": "1.0.0-alpha",
+  "description": "Website for www.josephholsten.com",
+  "repository": "https://github.com/josephholsten/www.josephholsten.com",
+  "author": "Joseph Anthony Pasquale Holsten <joseph@josephholsten.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "sass": "^1.54.9"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build:eleventy": "npx @11ty/eleventy --input=source --output=build",
+    "build:sass": "npx sass source/stylesheets:build/stylesheets --style=compressed --no-quiet",
+    "watch:eleventy": "npx @11ty/eleventy --input=source --output=build --serve",
+  	"watch:sass": "npx sass source/stylesheets:build/stylesheets --watch",
+    "test": "npx @11ty/eleventy --input=source --output=build --dryrun"
+
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/josephholsten/www.josephholsten.com/issues"
+  },
+  "homepage": "https://github.com/josephholsten/www.josephholsten.com#readme",
+  "dependencies": {
+  }
+}
