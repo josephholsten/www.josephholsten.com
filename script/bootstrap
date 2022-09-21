@@ -11,7 +11,7 @@ if command_absent node; then
 fi
 
 if command_absent prince; then
-  echo 'prince(1) not found, install with `brew cask install prince` or similar'
+  echo 'prince(1) not found, install with `brew install homebrew/cask/prince` or similar'
   exit 1
 fi
 
