@@ -1,27 +1,31 @@
 ---
+layout: layout.mustache
 title: Resume
+page_classes: resume
 ---
 <div class="h-resume">
   <header class="h-card">
     <div style="display:inline-block">
       <h1 class="p-name"><a class="u-uid u-url" rel="me" href="http://josephholsten.com/">
-          <span class="p-given-name">Joseph Anthony Pasquale</span>
-          <span class="p-family-name">Holsten</span>
-        </a></h1>
-        <ul>
-          <li><i class="fa fa-envelope"></i>&nbsp;mailto:<a class="u-email" href="mailto:joseph@josephholsten.com">joseph@josephholsten.com</a></li>
-          <li><i class="fa fa-phone"></i>&nbsp;tel:<a class="p-tel" href="tel:+1-360-927-7234">+1-360-927-7234</a></li>
-        </ul>
-        <ul class="p-adr">
-          <li><i class="fa fa-map-marker"></i>&nbsp;<span class="p-street-address">2437 Undine St</span>. <span class="p-locality">Bellingham</span>, <span class="p-region">WA</span> <span class="p-postal-code">98229-3732</span> <span class="p-country">US</span></li>
-          <li><i class="fa fa-crosshairs"></i>&nbsp;<span class="h-geo">
-              <data class="p-latitude" value="48.762143">N 48° 45′ 43.7″</data>
-              <data class="p-longitude" value="-122.448799">W 122° 26′ 55.7″</data>
-            </span></li>
-        </ul>
+        <span class="p-given-name">Joseph Anthony Pasquale</span>
+        <span class="p-family-name">Holsten</span>
+      </a></h1>
+      <ul>
+        <li><svg class="icon"><use href="/images/solid.svg#envelope"></use></svg>&nbsp;mailto:<a class="url u-email" href="mailto:joseph@josephholsten.com">joseph@josephholsten.com</a></li>
+        <li><svg class="icon"><use href="/images/solid.svg#phone"></use></svg>&nbsp;tel:<a class="p-tel" href="tel:+1-360-927-7234">+1-360-927-7234</a></li>
+      </ul>
+      <ul class="p-adr">
+        <li><svg class="icon"><use href="/images/solid.svg#map-pin"></svg>&nbsp;<span class="p-locality">Burlington</span>, <span class="p-region">WA</span>
+          <span class="p-postal-code">98233</span> <span class="p-country">US</span></li>
+        <li><svg class="icon"><use href="/images/solid.svg#crosshairs"></svg>
+          <a class="h-geo" href="https://www.openstreetmap.org/?mlat=48.48&mlon=-122.32&zoom=12&layers=M">
+            <data class="p-latitude" value="48.48">48°29′N</data>
+            <data class="p-longitude" value="-122.32">122°19′W</data>
+        </a></li>
+      </ul>
     </div>
     <section id="pdf-download">
-      <a href="files/resume-full.pdf" title="Download in PDF format"><img src="http://assets.josephholsten.com/images/pdficon_large.gif" alt="Download in PDF format" width="32" height="32" style></a>
+      <a href="files/resume.pdf" title="Download in PDF format"><img src="http://assets.josephholsten.com/images/pdficon_large.gif" alt="Download in PDF format" width="32" height="32" style></a>
     </section>
   </header>
 
@@ -33,24 +37,18 @@ title: Resume
         <h3>Programming Languages</h3>
         Significant experience with
         Ruby,
-        Portable Bourne Shell &amp;
-        Go,
-        Javascript.
+        Portable Bourne Shell,
+        Go &amp;
+        JavaScript.
         Some experience with
         <span class="caps">C</span>,
-        <span class="caps">PHP</span>,
-        <span class="caps">C#</span>.
-        <span class="caps">SQL</span>,
-        Java.
+        Java,
+        Python &amp;
+        <span class="caps">SQL</span>.
         Merely dangerous in
-        Python,
         Scheme,
-        M4,
-        Perl,
-        Haskell,
-        Erlang,
-        <span class="caps">TCL</span> &amp;
-        Awk.
+        Haskell &amp;
+        Erlang.
       </li>
 
       <li>
@@ -63,13 +61,8 @@ title: Resume
         Network Monitoring (Sensu, Nagios, Server Density),
         Metric Timeseries (Graphite, Librato),
         Log Management (Logstash, RSyslog, Papertrail),
-        <span class="caps">HTTP</span> Servers (Nginx, Apache),
-        Queue Brokers (RabbitMQ, Kafka, Redis),
-        Package Management (<span class="caps">Deb</span>, MacPorts, Ruby Gems, <span class="caps">RPM</span>),
-        Process Management (Upstart, Systemd, Monit),
-        Logging (RSyslog, Logstash, Loggly),
-        Network Monitoring (Nagios, Server Density) &amp;
-        Rsync.
+        <span class="caps">HTTP</span> Servers (Apache, Nginx) &amp;
+        Queue Brokers (RabbitMQ, Kafka, Redis).
         Some experience with
         <span class="caps">VPN</span> (OpenVPN, <span class="caps">IKE</span>v2, Wireguard),
         Firewalls (IPFilter, <span class="caps">IPF</span>),
@@ -89,7 +82,7 @@ title: Resume
         <span class="caps">REST</span>,
         <span class="caps">HTML</span>,
         <span class="caps">DOM</span> &amp;
-        <span class="caps">XML</span> (incl. Namespaces).
+        <span class="caps">XML</span>.
         Some experience with
         <span class="caps">CSS</span> &amp;
         <span class="caps">SAX</span>.
@@ -102,9 +95,9 @@ title: Resume
       <li>
         <h3>Operating Systems</h3>
         Significant experience with
-        <span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>,  <span class="caps">OS X</span> &amp; Solaris).
+        <span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>, <span class="caps">OS X</span>, Illumos).
         Some experience with
-        Windows (<span class="caps">NT</span> 4 &amp; 2000 admin, 2003 dev).
+        Windows (Server 2012 R2).
         Want excuses to play with
         Plan 9 &amp;
         <span class="caps">IBM</span> i (née <span class="caps">AS/400</span>).
@@ -113,12 +106,12 @@ title: Resume
       <li>
         <h3>Software engineering</h3>
         Significant experience with
-        Model-View-Controller (Rails, Backbone, AngularJS),
-        Test Driven Development (rspec, cucumber, xUnit),
-        Continuous Delivery (Jenkins, Rake, Make) &amp;
-        Queueing (RabbitMQ, Redis pubsub, ØMQ).
+        Model-View-Controller,
+        Test Driven Development,
+        Continuous Delivery &amp;
+        Queueing.
         Some experience with
-        Evented concurrency (Node.js),
+        Evented concurrency,
         Key-Value databases &amp;
         Document databases.
       </li>
@@ -143,61 +136,148 @@ title: Resume
         </ul>
         </li>
       -->
+      <li class="p-experience h-event h-card">
+        <h3>
+          <span class="p-job-title">Senior Engineer</span>,
+          <span class="p-org"><a href="https://www.oracle.com/cloud/">Oracle Cloud Infrastructure, Compute</a></span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Seattle</span>,
+            <span class="p-region">WA</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <!-- <span class="p-location employee">Remote</span> -->
+          <span class="dates"><time class="dt-start" datetime="2018-05-16">2018-05-16</time> &ndash; Present
+        </h3>
+        <ul class="p-description">
+            <li>Improve core API service performance, from developing throughput testing and implementing major underlying impementation upgrades in Java, to guiding customers through usage of improved systems.</li>
+            <li>Manage product release for significant customer-visible features.</li>
+            <li>Design and implement reusable customer solutions and product demos using Python, Terraform, Ansible, and Cloud-Init.</li>
+        </ul>
+      </li>
+      <li class="p-experience h-event h-card">
+        <h3>
+          <span class="p-job-title">DevOps Engineer</span>,
+          <span class="p-org"><a href="http://privateinternetaccess.com/">Private Internet Access</a></span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Denver</span>,
+            <span class="p-region">CO</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <!-- <span class="p-location employee">Remote</span> -->
+          <!--
+            tel:<a href="tel:+1-303-944-7412" title="Human Resources">+1-303-944-7412</a>
+          -->
+          <span class="dates"><time class="dt-start" datetime="2017-08-23">2017-08</time> &ndash;
+            <time class="dt-end" datetime="2018-03-21">2018-03</time></span>
+        </h3>
+        <ul class="p-description">
+          <li>Maintain existing VPN network infrastructure of over 3000 physical servers in 45 seperate datacenters using homegrown configuration management, deployment and monitoring tools.</li>
+          <li>Design failure detection service using prometheus and grafana to replace homegrown monitoring.</li>
+          <li>Deploy gitlab and gitlab ci to replace homegrown source code management.</li>
+          <li>Develop incident response procedures.</li>
+        </ul>
+      </li>
+
+      <li class="p-experience h-event h-card">
+        <h3>
+          <span class="p-job-title">Software Engineer</span>,
+          <span class="p-org"><a href="http://lovable.tech/">Lovable Technology</a></span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">San Francisco</span>,
+            <span class="p-region">CA</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <!-- <span class="p-location employee">Remote</span> -->
+          <!--
+            tel:<a href="tel:+1-651-283-0815" title="Mike J Ihbe">+1-651-283-0815</a>
+          -->
+          <span class="dates"><time class="dt-start" datetime="2017-03-14">2017-03</time> &ndash;
+            <time class="dt-end" datetime="2017-07-31">2017-07</time></span>
+        </h3>
+        <ul class="p-description">
+          <li>Contracted with Oracle to implement a Go SDK and <a href="https://github.com/oracle/terraform-provider-baremetal">Terraform Provider for Oracle Bare Metal Cloud</a>.</li>
+        </ul>
+      </li>
 
       <li class="p-experience h-event h-card">
         <h3>
           <span class="p-job-title">Infrastructure Engineer</span>,
           <span class="p-org"><a href="http://ensighten.com/">Ensighten</a></span>
-          <!-- <span class="p-location">Remote</span> -->
-          <span class="dates"><time class="dt-start" datetime="2014-11-01">2014-11</time> &ndash; Present</span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">San Jose</span>,
+            <span class="p-region">CA</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <!-- <span class="p-location employee">Remote</span> -->
+          <!--
+            tel:<a href="tel:+1-650-290-7212" title="Tom Pina">+1-650-290-7212</a>
+          -->
+          <span class="dates"><time class="dt-start" datetime="2014-11-01">2014-11</time> &ndash;
+            <time class="dt-end" datetime="2017-03-07">2017-03</time></span>
         </h3>
-        <ul class="achievements">
-          <li>Infrastructure buildout, maintenance, &amp; automation: Colaborated with infrastructure and product engineers to maintain ~500 servers using puppet for platform config and ansible for deployment.</li>
-          <li>Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using sensu &amp; graphite.</li>
-          <li>Secondary DNS: Converted ~2000 records for geo-targeted services from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the UltraDNS &amp; NS1 providers for terraform, and a nagios-compatible monitoring plugin to check for divergence.</li>
+        <ul class="p-description">
+          <li>Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using <a href="https://www.terraform.io/">Terraform</a> for provisioning, <a href="https://puppet.com/">Puppet</a> for platform config &amp; <a href="https://www.ansible.com/">Ansible</a> for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.</li>
+          <li>Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using <a href="https://sensuapp.org/">Sensu</a> &amp; <a href="http://graphiteapp.org/">Graphite</a>.</li>
+          <li>Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the <a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a> &amp; <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a> providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.</li>
+          <li>Tooling development: Implemented &amp; maintained UltraDNS and NS1 Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.
         </ul>
       </li>
-      <li class="experience h-event h-card">
+      <li class="p-experience h-event h-card">
         <h3>
-          <span class="p-job-title">Infrastucture Engineer</span>,
+          <span class="p-job-title">Infrastructure Engineer</span>,
           <span class="p-org"><a href="http://simplymeasured.com/">Simply Measured</a></span>
-          <!-- <span class="p-location">Seattle, WA</span> -->
-          <span class="dates"><time class="dt-start" datetime="2012-02-21">2012-02</time> &ndash; <time class="dt-end" datetime="2014-08-04">2014-08</time></span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Seattle</span>,
+            <span class="p-region">WA</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <!--
+            tel:<a href="tel:+1-206-204-8328" title="Public Phone Number">+1-206-204-8328</a>
+          -->
+          <span class="dates"><time class="dt-start" datetime="2012-02-21">2012-02</time> &ndash;
+            <time class="dt-end" datetime="2014-08-04">2014-08</time></span>
         </h3>
-        <ul class="achievements">
+        <ul class="p-description">
           <li>Infrastructure buildout, maintenance, &amp; automation: Designed, built and maintained systems to run internal applications and support services. Maintained ~500 servers and ~50 internal applications, averaging a 150 server-to-admin ratio.</li>
           <li>Metrics &amp; reporting: Provided services for measuring and reporting performance and usage of internal applications.</li>
-          <li>Education: developed, maintained &amp; trained in procedures for using infrastructure and internal support services. Developed ~100 standard operating procedures and supported ~45 engineers.</li>
+          <li>Education: developed, maintained and trained in procedures for using infrastructure and internal support services. Developed ~100 standard operating procedures and supported ~45 engineers.</li>
           <li>Emergency response: developed and maintained on-call processes for engineering teams to respond to their respective application and infrastructure failures.</li>
         </ul>
       </li>
 
-      <li class="experience h-event h-card">
+      <li class="p-experience h-event h-card next-page">
         <h3>
-          <span class="p-job-title">Developer</span>,
-          <span class="p-org"><a href="http://www.newmedio.com/">New Medio</a></span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2011-08-01">2011-08</time> &ndash; <time class="dt-end" datetime="2012-01-01">12-01</time></span>
-        </h3>
-        <p class="description">In charge of implementing CMS designs.</p>
-      </li>
-
-      <li class="experience h-event h-card">
-        <h3>
-          <span class="p-job-title">Founder, Operations Guy</span>,
+          <span class="p-job-title">Operations Engineer</span>,
           <span class="p-org">Bitp.it</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2011-02-10">2011-02</time> &ndash; <time class="dt-end" datetime="2011-08-01">2011-08</time></span>
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">Tulsa</span>,
+            <span class="p-region">OK</span>,
+            <span class="p-country-name">US</span>
+          </span>
+          -->
+          <span class="dates"><time class="dt-start" datetime="2011-02-10">2011-02</time> &ndash;
+            <time class="dt-end" datetime="2011-08-01">2011-08</time></span>
         </h3>
-        <ul class="achievements">
-          <li>Developed, implemented fully automated deployments using <a href="http://git-scm.com/">git</a>, <a href="http://wiki.opscode.com/display/chef">chef</a></li>
+        <ul class="p-description">
+          <li>Developed, implemented fully automated deployments using <a href="http://git-scm.com/">Git</a>, <a href="http://wiki.opscode.com/display/chef">Chef</a></li>
           <li>Ran a node.js service on a single no.de server handling over 400 requests per second</li>
           <li>Ran a bitcoin mining pool at 100 GHash per second</li>
         </ul>
       </li>
 
-      <li class="pending experience h-event h-card">
-        <h3><span class="p-job-title">Senior Engineer</span>,
+      <li class="p-experience h-event h-card">
+        <h3><span class="p-job-title">Software Engineer</span>,
           <span class="p-org"><a href="http://waterfieldtechnologies.com/">Waterfield Technologies, Inc</a></span>
           <!--
           <span class="p-location h-adr">
@@ -206,10 +286,22 @@ title: Resume
             <span class="p-country-name">US</span>
           </span>
           -->
-          <span class="dates"><time class="dt-start" datetime="2007-04-27">2007-04</time> &ndash; <time class="dt-end" datetime="2011-09-09">2011-09</time></span>
+          <!--
+            tel:<a class="p-tel" href="tel:+1-918-858-6413">+1-918-858-6413</a>
+          -->
+
+          <!--<span class="dates">
+            <time class="dt-start" datetime="2007-04-27">2007-04</time> &ndash;
+            <time class="dt-end">?</time>
+          </span>-->
+          <span class="dates">
+            <!-- period when working as a contractor -->
+            <time class="dt-start" datetime="2010-06-08">2010-06</time> &ndash;
+            <time class="dt-end" datetime="2011-08-08">2011-08</time>
+          </span>
         </h3>
         <ul class="p-description">
-          <li>Developed, implemented fully automated deployment strategies using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">VMWare</a>, <a href="http://git-scm.com/">git</a>, <a href="http://wiki.opscode.com/display/chef">chef</a>, &amp; <a href="http://capify.org/">capistrano</a></li>
+          <li>Developed, implemented fully automated deployment strategies using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">VMWare</a>, <a href="http://git-scm.com/">Git</a>, <a href="http://wiki.opscode.com/display/chef">Chef</a>, &amp; <a href="http://capify.org/">Capistrano</a></li>
           <li>Developed banking &amp; energy sites using SharePoint, <span class="caps">ASP.NET</span>, Ruby on Rails</li>
           <li>Automated testing, continuous integration site monitoring with <a href="http://cukes.info/">Cucumber</a>, <a href="http://rspec.info/">RSpec</a>, NUnit, <a href="http://cruisecontrolrb.thoughtworks.com/">CruiseControl</a></li>
           <li>Developed a content publishing service with <abbr title="Javascript Object Notation" class="caps">JSON</abbr>, <abbr title="Hypertext Markup Language" class="caps">HTML</abbr> &amp; <span class="caps">SOAP</span> interfaces</li>
@@ -226,82 +318,17 @@ title: Resume
             <span class="p-country-name">US</span>
           </span>
           -->
-          <span class="dates"><time class="dt-start" datetime="2009-10-12">2009-10</time> &ndash; <time class="dt-end" datetime="2010-08-31">2010-08</time></span>
+          <span class="dates"><time class="dt-start" datetime="2009-10-12">2009-10</time> &ndash;
+            <time class="dt-end" datetime="2010-08-31">2010-08</time></span>
         </h3>
         <ul class="p-description">
           <li>Developed a mobile real estate listing service for real estate agents</li>
-          <li>Optimized a pure ruby RETS client to process ~6000 listings &amp; ~60000 images per day on a single heroku worker</li>
+          <li>Optimized a pure ruby API client to process ~6000 listings &amp; ~60000 images per day on a single Heroku worker, over 10x more throughput than the vendor's standard client.</li>
         </ul>
       </li>
 
-      <li class="experience h-event h-card ">
-        <h3>
-          <span class="p-job-title">Web Programmer</span>,
-          <span class="p-org">Toydrum, Inc</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2007-01-01">2007-01</time> &ndash; <time class="dt-end" datetime="2007-04-01">2007-04</time></span>
-        </h3>
-        <ul class="achievements">
-          <li>Developed community item trading site using <span class="caps">PHP</span>, Zend framework</li>
-          <li>Implemented double entry accounting, folksonomies, event based messaging</li>
-        </ul>
-      </li>
-
-      <li class="experience h-event h-card">
-        <h3>
-          <span class="p-job-title">Web Designer</span>,
-          <span class="p-org">DoubleShot Coffee</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2006-09-01">2006-09</time> &ndash; <time class="dt-end" datetime="2012-12-01">2011-12</time></span>
-        </h3>
-
-        <ul class="acheivements">
-          <li>Developed their internet identity</li>
-          <li>Designed their blog with <abbr title="Cascading Style Sheets" class="caps">CSS</abbr>, Blogger templates</li>
-          <li>Integrated with Flickr integration, Paypal integration</li>
-          <li>Site administration, <abbr title="Active Server Pages" class="caps">ASP</abbr>, <span class="caps">PHP</span></li>
-        </ul>
-      </li>
-
-      <li class="pending experience h-event h-card">
-        <h3>
-          <span class="p-job-title">Web Developer</span>,
-          <span class="p-org">Thirst Wine</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2007-12-01">2007-12</time> &ndash; <time class="dt-end" datetime="2008-03-01">2008-03</time></span>
-        </h3>
-        <ul>
-          <li>Developed content management site using Ruby on Rails</li>
-          <li>Implemented authentication, protected assets, email notifications</li>
-          <li>Converted table based design to <abbr title="Cascading Style Sheets" class="caps">CSS</abbr></li>
-        </ul>
-      </li>
-
-      <li class="experience h-event h-card">
-        <h3>
-          <span class="p-job-title">Web Programmer</span>,
-          <span class="p-org">Midwest Publishing</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2006-01-01">2006-01</time></span>
-        </h3>
-        <ul>
-          <li>Converted paper based questionnaires to web forms using perl</li>
-        </ul>
-      </li>
-
-      <li class="experience h-event h-card">
-        <h3>
-          <span class="p-job-title">Network Administrator</span>,
-          <span class="p-org">Christ United Methodist Church</span>
-          <!-- <span class="p-location">Tulsa, OK</span> -->
-          <span class="dates"><time class="dt-start" datetime="2003-06-01">2003-06</time> &ndash; <time class="dt-end" datetime="2004-09-01">2004-09</time></span>
-        </h3>
-        <ul class="achievements">
-          <li>Upgraded existing systems in software &amp; hardware</li>
-          <li>Administered File, Printing, <span class="caps">DNS</span>, Active Directory Services</li>
-          <li>Documented existing service settings proceedures</li>
-          <li>Completed 20 node Learning Lab Installation</li>
-        </ul>
+      <li>
+        <p>Further experience available upon request</p>
       </li>
 
     </ul>

@@ -7,25 +7,18 @@ set -e
 remote_repo="https://github.com/josephholsten/www.josephholsten.com.git"
 remote_branch="gh-pages"
 
-head_abbr_commit_hash=`git log --pretty="%h" -n1`
-
 echo 'Publishing site...'
 cd build
 
     git init
     git add .
-    printf 'Files to Commit: '
-    find . |
-        grep -c -v '^\./\.git'
-
-    # echo "Committing files from ${head_abbr_commit_hash} ..."
-    # git commit -m"Site updated to ${head_abbr_commit_hash}" > /dev/null 2>&1
-
     # echo "Pushing... to $remote_repo master:$remote_branch"
-    # echo git push --force $remote_repo master:$remote_branch # > /dev/null 2>&1
-
-    # echo "Removing git..."
-    # rm -fr .git
+    git remote add origin $remote_repo ||
+            echo "Remote origin already exists"
+    git fetch
+    git reset origin/$remote_branch
+    git diff "$@"
 
 cd -
 echo 'Done'
+

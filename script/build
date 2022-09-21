@@ -1,3 +1,29 @@
 #!/bin/sh
 
-bundle exec rake build
+set -x
+
+npm run build:eleventy
+npm run build:sass
+
+mkdir -p build/images
+cp "node_modules/@fortawesome/fontawesome-free/sprites/solid.svg" build/images
+
+npm run watch:eleventy &
+pid=$!
+
+iterator=0
+while [ "$iterator" -lt 100 ]
+do
+    sleep 1
+    if curl http://localhost:8080/
+    then
+        break
+    else
+        iterator=$((iterator + 1))
+    fi
+done
+
+mkdir -p build/files
+prince http://localhost:8080/resume -o build/files/resume.pdf
+
+kill "${pid}"
