@@ -3,8 +3,9 @@
 # Why don't I use another tool for this? Because they keep breaking, which is exhausting for something this simple.
 
 set -e
+set -x
 
-remote_repo="https://github.com/josephholsten/www.josephholsten.com.git"
+remote_repo="git@github.com:josephholsten/www.josephholsten.com.git"
 remote_branch="gh-pages"
 
 head_abbr_commit_hash=`git log --pretty="%h" -n1`
@@ -12,17 +13,24 @@ head_abbr_commit_hash=`git log --pretty="%h" -n1`
 echo 'Publishing site...'
 cd build
 
-    git init
+    git init ||
+			true
+		git remote add origin "${remote_repo}" ||
+			true
+		git fetch origin
+
+		git reset origin/"${remote_branch}"
+
     git add .
     printf 'Files to Commit: '
     find . |
         grep -c -v '^\./\.git'
 
-    # echo "Committing files from ${head_abbr_commit_hash} ..."
-    # git commit -m"Site updated to ${head_abbr_commit_hash}" > /dev/null 2>&1
+    echo "Committing files from ${head_abbr_commit_hash} ..."
+    git commit -m"Site updated to ${head_abbr_commit_hash}" > /dev/null 2>&1
 
-    # echo "Pushing... to $remote_repo master:$remote_branch"
-    # echo git push --force $remote_repo master:$remote_branch # > /dev/null 2>&1
+    echo "Pushing... to $remote_repo master:$remote_branch"
+		git push --force origin main:"${remote_branch}"
 
     # echo "Removing git..."
     # rm -fr .git
