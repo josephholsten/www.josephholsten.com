@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>RETR4r</title>
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/mobile.css" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/print.css" rel="stylesheet" type="text/css"/>
+
+
+    <link href="http://assets.josephholsten.com/images/identity.png" rel="apple-touch-icon" type="image/png" />
+    <link href="http://assets.josephholsten.com/images/identity.png" rel="icon" type="image/png" />
+    <link rel="pavatar" type="image/jpeg" href="http://assets.josephholsten.com/images/identity-80x80.jpeg" />
+
+    <script type="text/javascript">
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+  analytics.load("565Ztb7fnb1KWeR0eikvf5bnsD0Xc1BM");
+  analytics.page()
+}}();
+    </script>
+
+  </head>
+
+  <body class="page pages_rets4r">
+<div class="page">
+    <p>While I was at a <a href="http://www.mobicentric.com/">small real estate startup</a>, we processesed real
+estate data for regions as large as the Dallas metro area. To keep our
+management overhead down, we used heroku for our web app. But processing
+the data had to happen on a windows server to run the <a href="http://www.retsconnector.com/">vendor's RETS
+client</a>. Because of this query changes ended up coupled accross
+services, and when errors occured in the API client we had few options
+to resolve the issue. Worse, our daily sync call could take 4 hours to
+process and update our local data.</p>
+<p>We investigated the reference client <a href="https://code.google.com/p/crt-resync/">resync</a>, which was binding to
+libRETS. Unfortunately, this library had a habit of segfaulting due to
+non-threadsafe code, and couldn't be run on heroku due to the libRETS
+dependency.</p>
+<p>So we investigated pure ruby options and discovered a number of forks of
+rets4r, but the maintainer was neither merging the patches nor releasing
+new gems. So we merged all the forked versions into a single repo and
+contacted the authors to encourage them to continue working together.</p>
+<p>This allowed us to move some processing to heroku workers, but we still
+had a huge sync that refused to complete without crashing the instance.
+We attempted to reduce the size of the query, but discovered that the
+server did not implement either cursors or offsets. So we investigated
+where the memory issue was, and discovered that the library was using a
+DOM XML API and chewing through memory like water.</p>
+<p>So we extracted the document API and created another parser to use SAX.
+We still allowed DOM to be used because interactive and prototype work
+was still much easier with it. This also allowed us to use a common test
+suite to verify behaviour was the same.</p>
+<p>Finally we shipped, and kept both data collectors running for about a
+week. This allowed us to verify that the data was actually identical <em>in
+production</em>.</p>
+<p>Amazingly, it was identical on the first production release. More
+amazing, it was over 10x faster than the commercial client.</p>
+
+</div>
+  </body>
+</html>

@@ -1,1 +1,1 @@
-@media print{body{background:white;color:black;font-size:7.5pt}.page{border:black 1px;background:white;width:100%;box-shadow:none;margin:0em auto;padding:0mm}#pdf-download{display:none !important}iframe{display:none}.next-page{page-break-before:always}}
+@media print{body{background:#fff;color:#000;font-size:7.5pt}.page{border:#000 1px;background:#fff;width:100%;box-shadow:none;margin:0em auto;padding:0mm}#pdf-download{display:none !important}iframe{display:none}.next-page{page-break-before:always}}/*# sourceMappingURL=print.css.map */
