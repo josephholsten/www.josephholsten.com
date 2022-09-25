@@ -1,0 +1,9 @@
+<span class="dates">
+  <time class="dt-start" datetime="{{dt_start}}">{{dt_start_display}}</time>
+  {{#dt_end}}
+    &ndash; <time class="dt-end" datetime="{{.}}">{{dt_end_display}}</time>
+  {{/dt_end}}
+  {{#dt_ongoing}}
+    &ndash; Present
+  {{/dt_ongoing}}
+</span>
