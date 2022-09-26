@@ -1,0 +1,642 @@
+---
+layout: layout.mustache
+title: Resume
+page_classes: resume
+
+self_card:
+  name:
+    given_name: Joseph
+    additional_name: Anthony Pasquale
+    family_name: Holsten
+  url: http://josephholsten.com/
+  email: mailto:joseph@josephholsten.com
+  tel: tel:+1-360-927-7234
+  adr:
+    locality: Burlington
+    region: WA
+    postal_code: 98233
+    country_name: US
+    geo:
+      latitude: 48.48
+      latitude_display: 48°29′N
+      longitude: -122.32
+      longitude_display: 122°19′W
+
+experience:
+
+- job_title: Senior Engineer
+  org:
+    name: Oracle Cloud Infrastructure, Compute
+    url: https://www.oracle.com/cloud/
+    tel: tel:+1-303-944-7412
+    adr:
+      locality:     Seattle
+      region:       WA
+      country_name: US
+  location: Remote
+  dt_start:         "2018-05-16"
+  dt_start_display: 2018-05
+  dt_ongoing:       true
+  content:
+  - Improve core API service performance, from developing throughput testing and implementing major underlying impementation upgrades in Java, to guiding customers through usage of improved systems.
+  - Manage product release for significant customer-visible features.
+  - Design and implement reusable customer solutions and product demos using Python, Terraform, Ansible, and Cloud-Init.
+
+- job_title: DevOps Engineer
+  org:
+    name: Private Internet Access
+    url: http://privateinternetaccess.com/
+    tel: tel:+1-303-944-7412
+    adr:
+      locality:     Denver
+      region:       CO
+      country_name: US
+  location: Remote
+  dt_start:         "2017-08-23"
+  dt_start_display: 2017-08
+  dt_end:           "2018-03-21"
+  dt_end_display:   2018-03
+  content:
+  - Maintain existing VPN network infrastructure of over 3000 physical servers in 45 seperate datacenters using homegrown configuration management, deployment and monitoring tools.
+  - Design failure detection service using prometheus and grafana to replace homegrown monitoring.
+  - Deploy gitlab and gitlab ci to replace homegrown source code management.
+  - Develop incident response procedures.
+
+- job_title: Software Engineer
+  org:
+    name: Lovable Technology
+    url: http://lovable.tech/
+    tel: tel:+1-651-283-0815 # Mike J Ihbe
+    adr:
+      locality:     San Francisco
+      region:       CA
+      country_name: US
+  location: Remote
+  dt_start:         "2017-03-14"
+  dt_start_display: 2017-03
+  dt_end:           "2017-07-31"
+  dt_end_display:   2017-07
+  content:
+  - 'Contracted with Oracle to implement a Go SDK and <a href="https://github.com/oracle/terraform-provider-baremetal">Terraform Provider for Oracle Bare Metal Cloud</a>.'
+
+- job_title: Infrastructure Engineer
+  org:
+    name: Ensighten
+    url: http://ensighten.com/
+    tel: tel:+1-650-290-7212
+    adr:
+      locality:     San Jose
+      region:       CA
+      country_name: US
+  location: Remote
+  dt_start:         "2014-11-01"
+  dt_start_display: 2014-11
+  dt_end:           "2017-03-07"
+  dt_end_display:   2017-03
+  content:
+  - 'Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using <a href="https://www.terraform.io/">Terraform</a> for provisioning, <a href="https://puppet.com/">Puppet</a> for platform config &amp; <a href="https://www.ansible.com/">Ansible</a> for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.'
+  - 'Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using <a href="https://sensuapp.org/">Sensu</a> &amp; <a href="http://graphiteapp.org/">Graphite</a>.'
+  - 'Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the <a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a> &amp; <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a> providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.'
+  - 'Tooling development: Implemented &amp; maintained UltraDNS and NS1 Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.'
+
+- job_title: Infrastructure Engineer
+  org:
+    name: Simply Measured
+    url: http://simplymeasured.com/
+    tel: tel:+1-206-204-8328
+    adr:
+      locality:     Seattle
+      region:       WA
+      country_name: US
+  dt_start:         "2012-02-21"
+  dt_start_display: 2012-02
+  dt_end:           "2014-08-04"
+  dt_end_display:   2014-08
+  content:
+  - "Infrastructure buildout, maintenance, &amp; automation: Designed, built and maintained systems to run internal applications and support services. Maintained ~500 servers and ~50 internal applications, averaging a 150 server-to-admin ratio."
+  - "Metrics &amp; reporting: Provided services for measuring and reporting performance and usage of internal applications."
+  - "Education: developed, maintained and trained in procedures for using infrastructure and internal support services. Developed ~100 standard operating procedures and supported ~45 engineers."
+  - "Emergency response: developed and maintained on-call processes for engineering teams to respond to their respective application and infrastructure failures."
+
+- job_title: Operations Engineer
+  org:
+    name: Bitp.it
+    adr:
+      locality:     Tulsa
+      region:       OK
+      country_name: US
+  dt_start:         "2011-02-10"
+  dt_start_display: 2011-02
+  dt_end:           "2011-08-01"
+  dt_end_display:   2011-08
+  content:
+  - Developed, implemented fully automated deployments using <a href="http://git-scm.com/">Git</a>, <a href="http://wiki.opscode.com/display/chef">Chef</a>
+  - Ran a node.js service on a single no.de server handling over 400 requests per second
+  - Ran a bitcoin mining pool at 100 GHash per second
+
+- job_title: Software Engineer
+  org:
+    name: Waterfield Technologies
+    url: http://waterfieldtechnologies.com/
+    tel: tel:+1-918-858-6413
+    adr:
+      locality:     Tulsa
+      region:       OK
+      country_name: US
+  # Pre-contractor work
+  # dt_start:       2007-04-27
+  dt_start:         "2010-06-08"
+  dt_start_display: 2010-06
+  dt_end:           "2011-08-08"
+  dt_end_display:   2011-08
+  content:
+  - Developed, implemented fully automated deployment strategies using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">VMWare</a>, <a href="http://git-scm.com/">Git</a>, <a href="http://wiki.opscode.com/display/chef">Chef</a>, &amp; <a href="http://capify.org/">Capistrano</a>
+  - Developed banking &amp; energy sites using SharePoint, <span class="caps">ASP.NET</span>, Ruby on Rails
+  - Automated testing, continuous integration site monitoring with <a href="http://cukes.info/">Cucumber</a>, <a href="http://rspec.info/">RSpec</a>, NUnit, <a href="http://cruisecontrolrb.thoughtworks.com/">CruiseControl</a>
+  - Developed a content publishing service with <abbr title="Javascript Object Notation" class="caps">JSON</abbr>, <abbr title="Hypertext Markup Language" class="caps">HTML</abbr> &amp; <span class="caps">SOAP</span> interfaces
+
+- job_title: Engineer
+  org:
+    name: Mobicentric
+    url: http://mobicentric.com/
+    adr:
+      locality:     Tulsa
+      region:       OK
+      country_name: US
+  dt_start:         "2009-10-12"
+  dt_start_display: 2009-10
+  dt_end:           "2010-08-31"
+  dt_end_display:   2010-08
+  content:
+  - Developed a mobile real estate listing service for real estate agents
+  - Optimized a pure ruby API client to process ~6000 listings &amp; ~60000 images per day on a single Heroku worker, over 10x more throughput than the vendor's standard client.
+
+contributions:
+
+- name:        Founder, Board Member
+  org:
+    name: Sous Chefs
+    url: http://github.com/sous-chefs
+  dt_start:         "2015-05-10"
+  dt_start_display: 2015
+  dt_end:          "2019-10-10"
+  dt_end_display:   2019
+  items:
+  - title: github-org
+    url:   http://github.com/sous-chef
+  - title: torch-passing
+    url: https://github.com/sous-chefs/website/blob/main/content/docs/sous-board-2019.md
+    last:  true
+
+- name:        Contributor
+  org:
+    name: terraform
+  dt_start:    "2014-11-25"
+  dt_start_display: 2014
+  dt_ongoing:  true
+  items:
+  - title: OCI
+    url:   https://github.com/oracle/terraform-provider-oci
+  - title: NS1
+    url:   https://github.com/ns1-terraform/terraform-provider-ns1
+  - title: UltraDNS
+    url:   https://github.com/terraform-providers/terraform-provider-ultradns
+  - title: core
+    url:   https://github.com/hashicorp/terraform/commits?author=josephholsten
+    last:  true
+
+- name:        Contributor
+  org:
+    name: glibc
+  dt_start:         "2014-04-11"
+  dt_start_display: 2014
+  items:
+  - title: commitdiff
+    url:   https://sourceware.org/git/?p=glibc.git;a=commitdiff;h=c12e9f37417240a086c5b9e2fb321f1db8e9547f;hp=439bda3209b768c349b98b8ceecf0fa8d94600e9
+    last:  true
+
+- name:        Contributor
+  org:
+    name: go
+  dt_start:         "2013-07-13"
+  dt_start_display: 2013
+  items:
+  - title: commitdiff
+    url:   https://code.google.com/p/go/source/detail?name=e8b145221231&r=e8b1452212313491cbfed60cf5601440cf85d0e0
+    last:  true
+
+- name:        Contributor
+  org:
+    name: OASIS
+  dt_start:         "2008-11-01"
+  dt_start_display: 2008
+  dt_end:           "2010-11-01"
+  dt_end_display:   2010
+  items:
+  - title: XRD
+    url:   http://docs.oasis-open.org/xri/xrd/v1.0/xrd-1.0.html
+    last:  true
+
+- name:        Contributor
+  org:
+    name: IETF
+  dt_start:    2009-01
+  dt_start_display: 2009
+  items:
+  - title: Disco
+    url:   http://tools.ietf.org/html/draft-hammer-discovery
+  - title: "About:"
+    url:   http://tools.ietf.org/html/draft-holsten-about-uri-scheme
+    last:  true
+
+- name:        Contributor
+  org:
+    name: OAuth Extensions
+  dt_start:    2008
+  dt_start_display: 2008
+  items:
+  - title: Session
+    url:   https://web.archive.org/web/20160507011451/http://oauth.googlecode.com:80/svn/spec/ext/session/1.0/drafts/1/spec.html
+  - title: Language
+    url:   https://web.archive.org/web/20160303202318/https://oauth.googlecode.com/svn/spec/ext/language_preference/1.0/drafts/2/spec.html
+  - title: Scalable
+    url:   https://web.archive.org/web/20101210040624/http://wiki.oauth.net/w/page/12238549/ScalableOAuth
+    last:  true
+
+- name:        Contributor
+  org:
+    name: Ruby on Rails
+  dt_start:    "2008-11-01"
+  dt_start_display: 2008
+  items:
+  - title: XmlMini
+    url: http://github.com/rails/rails/commit/fea8d9d06ffaf85eb9e590ae3ac7cf082ad0c420
+    last: true
+
+presentations:
+- name: Sous Chefs - Fostering Better Community Cookbooks
+  org:
+    name: Chef Conf
+    url:  https://chefconf.chef.io/2017/
+  dt_start:         "2017-05-24"
+  dt_start_display: "2017-05-24"
+  video_embed_url: https://www.youtube.com/embed/k-g3mNO-eN8
+  items:
+  - title: video
+    url:   https://youtu.be/k-g3mNO-eN8
+    last:  true
+
+- name: Sous Chefs
+  url: http://foodfightshow.org/2017/01/sous-chefs.html
+  org:
+    name: Food Fight Show
+    url:  http://foodfightshow.org
+  dt_start:         "2017-01-06"
+  dt_start_display: "2017-01-06"
+  video_embed_url: https://www.youtube.com/embed/DYrCP_7_tCo
+  items:
+  - title: video
+    url:   https://youtu.be/DYrCP_7_tCo
+    last:  true
+
+- name: Saturday Night Disco on Monday Morning
+  org:
+    name: DevOpsDays Austin
+    url:  http://devopsdays.org/events/2014-austin/
+  dt_start:         "2014-05-06"
+  dt_start_display: "2014-05-06"
+  video_embed_url: http://player.vimeo.com/video/97659271
+  items:
+  - title: video
+    url:   http://vimeo.com/97659271
+  - title: slides
+    url:   https://speakerdeck.com/josephholsten/saturday-night-disco-on-monday-morning
+    last:  true
+
+- name: Becoming Fearlessly Definite & Resourceful
+  org:
+    name: ChefConf
+    url:  http://chefconf.opscode.com/chefconf/
+  dt_start:         "2014-04-17"
+  dt_start_display: "2014-04-17"
+  video_embed_url: http://www.youtube.com/embed/QuH1dtRT_oE
+  items:
+  - title: video
+    url:   https://www.youtube.com/watch?v=QuH1dtRT_oE
+  - title: slides
+    url:   https://speakerdeck.com/josephholsten/becoming-fearlessly-definite-and-resourceful
+    last:  true
+
+- name: "Services in Go: from Proof-of-Concept to Production"
+  org:
+    name: GolangVan
+    url:  http://golangvan.org
+  dt_start:         "2014-02-05"
+  dt_start_display: "2014-02-05"
+  video_embed_url: http://www.youtube.com/embed/XVXUYLSW_eg
+  items:
+  - title: video
+    url:   https://www.youtube.com/watch?v=XVXUYLSW_eg
+  - title: slides
+    url:   http://go-talks.appspot.com/github.com/josephholsten/prod-ready-go-svcs/prod-ready-svcs.slide#1
+    last:  true
+
+
+education:
+- name: BS Computer Science
+  org:
+    name: Oklahoma State University
+    adr:
+      locality:    Tulsa
+      region:      Oklahoma
+      region_abbr: OK
+  dt_start:         "2005-09-01"
+  dt_start_display: 2005
+  dt_end:           "2010-05-01"
+  dt_end_display:   2010
+
+- name: Cisco Network Academy
+  org:
+    name: Tulsa Technology Center
+    adr:
+      locality:    Tulsa
+      region:      Oklahoma
+      region_abbr: OK
+  dt_start:         2002
+  dt_start_display: 2002
+  dt_end:           2003
+  dt_end_display:   2003
+
+references:
+- name: Dr. Robert Pierson
+  org: Christ United Methodist Church
+  tel: 918-747-8601
+
+---
+<div class="h-resume">
+  {{#self_card}}
+    <header class="h-card">
+      <div style="display:inline-block">
+        {{#name}}
+        <h1 class="p-name"><a class="u-uid u-url" rel="me" href="{{{url}}}">
+          <span class="p-given-name">{{given_name}}</span>
+          <span class="p-additional-name">{{additional_name}}</span>
+          <span class="p-family-name">{{family_name}}</span>
+        </a></h1>
+        {{/name}}
+        <ul>
+          <li><svg class="icon"><use href="/images/solid.svg#envelope"></use></svg>&nbsp;
+            <a class="url u-email" href="{{{email}}}">{{email}}</a>
+          </li>
+          <li><svg class="icon"><use href="/images/solid.svg#phone"></use></svg>&nbsp;
+            <a class="p-tel" href="{{[tel]}}">{{tel}}</a>
+          </li>
+        </ul>
+
+        {{#adr}}
+          <ul class="p-adr">
+            <li><svg class="icon"><use href="/images/solid.svg#map-pin"></svg>&nbsp;
+              <span class="p-locality">{{locality}}</span>,
+              <span class="p-region">{{region}}</span>
+              <span class="p-postal-code">{{postal_code}}</span>
+              <span class="p-country-name">{{country_name}}</span>
+            </li>
+            {{#geo}}
+              <li><svg class="icon"><use href="/images/solid.svg#crosshairs"></svg>&nbsp;
+                <a class="h-geo" href="https://www.openstreetmap.org/?mlat={{{latitude}}}&mlon={{{longitude}}}&zoom=12&layers=M">
+                  <data class="p-latitude" value="{{{latitude}}}">{{latitude_display}}</data>
+                  <data class="p-longitude" value="{{{longitude}}}">{{longitude_display}}</data>
+                </a>
+              </li>
+            {{/geo}}
+          </ul>
+        {{/adr}}
+      </div>
+      <section id="pdf-download">
+        <a href="files/resume.pdf" title="Download in PDF format"><svg class="pdf"><use href="/images/solid.svg#file-pdf"></svg></a>
+      </section>
+    </header>
+  {{/self_card}}
+
+  <section>
+    <h2>Skills</h2>
+    <ul id="skills" class="simple">
+
+      <li>
+        <h3>Programming Languages</h3>
+        Significant experience with
+        Ruby,
+        Portable Bourne Shell,
+        Go &amp;
+        JavaScript.
+        Some experience with
+        <span class="caps">C</span>,
+        Java,
+        Python &amp;
+        <span class="caps">SQL</span>.
+        Merely dangerous in
+        Scheme,
+        Haskell &amp;
+        Erlang.
+      </li>
+
+      <li>
+        <h3>Operations</h3>
+        Significant experience with
+        Continuous Delivery (Jenkins, Rundeck, Travis),
+        Containers (Docker, Illumos Zones),
+        Service Discovery (Consul, custom),
+        Configuration Management (Chef, Puppet, Ansible),
+        Network Monitoring (Sensu, Nagios, Server Density),
+        Metric Timeseries (Graphite, Librato),
+        Log Management (Logstash, RSyslog, Papertrail),
+        <span class="caps">HTTP</span> Servers (Apache, Nginx) &amp;
+        Queue Brokers (RabbitMQ, Kafka, Redis).
+        Some experience with
+        <span class="caps">VPN</span> (OpenVPN, <span class="caps">IKE</span>v2, Wireguard),
+        Firewalls (IPFilter, <span class="caps">IPF</span>),
+        Relational Databases (<span class="caps">PostgreSQL</span>, <span class="caps">MySQL</span>, <span class="caps">SQL</span> Server).
+        Merely dangerous with
+        Hadoop,
+        Cassandra,
+        <span class="caps">LDAP</span>,
+        Intrusion Detection &amp;
+        Single Sign On.
+      </li>
+
+      <li>
+        <h3>Web technologies</h3>
+        Significant experience with
+        <span class="caps">HTTP</span>,
+        <span class="caps">REST</span>,
+        <span class="caps">HTML</span>,
+        <span class="caps">DOM</span> &amp;
+        <span class="caps">XML</span>.
+        Some experience with
+        <span class="caps">CSS</span> &amp;
+        <span class="caps">SAX</span>.
+        Merely dangerous with
+        <span class="caps">RDF</span>,
+        <span class="caps">SOAP</span> &amp;
+        <span class="caps">WSDL</span>.
+      </li>
+
+      <li>
+        <h3>Operating Systems</h3>
+        Significant experience with
+        <span class="caps">UNIX</span> (Debian, <span class="caps">RHEL</span>, <span class="caps">OS X</span>, Illumos).
+        Some experience with
+        Windows (Server 2012 R2).
+        Want excuses to play with
+        Plan 9 &amp;
+        <span class="caps">IBM</span> i (née <span class="caps">AS/400</span>).
+      </li>
+
+      <li>
+        <h3>Software engineering</h3>
+        Significant experience with
+        Model-View-Controller,
+        Test Driven Development,
+        Continuous Delivery &amp;
+        Queueing.
+        Some experience with
+        Evented concurrency,
+        Key-Value databases &amp;
+        Document databases.
+      </li>
+
+    </ul>
+  </section>
+  <section>
+    <h2>Experience</h2>
+    <ul id="jobs">
+
+      <!-- Job template
+        <li class="p-experience h-event h-card">
+        <h3>
+        <span class="p-job-title">…</span>,
+        <span class="p-org">…</span>
+        <span class="p-location">…</span>
+        <span class="dates"><time class="dt-start" datetime="…">…</time> &ndash; <time class="dt-end" datetime="…">…</time></span>
+        </h3>
+        <p class="p-description">…</p>
+        <ul class="p-description">
+        <li>…</li>
+        </ul>
+        </li>
+      -->
+      {{#experience}}
+        <li class="p-experience h-event">
+          <h3>
+            <span class="p-job-title">{{job_title}}</span>,
+            {{> org_sans_adr }}
+
+            {{#org.adr}}
+          <!--
+          <span class="p-location h-adr">
+            <span class="p-locality">{{locality}}</span>,
+            <span class="p-region">{{region}}</span>,
+            <span class="p-country-name">{{country_name}}</span>
+          </span>
+          -->
+            {{/org.adr}}
+            {{> dates}}
+          </h3>
+          <ul class="p-description e-content">
+            {{#content}}
+              <li>{{{.}}}</li>
+            {{/content}}
+          </ul>
+        </li>
+      {{/experience}}
+
+      <li>
+        <p>Further experience available upon request</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Open Source & Community Contributions</h2>
+    <p>Most of my open source contributions are visible at <tt><a href='https://github.com/josephholsten/'>github.com/josephholsten</a></tt>,<br>
+       off-github contributions follow:</p>
+    <ul id="affiliations" class="simple">
+
+      <!--
+        <li class="p-affiliation h-event h-card">
+        <h3>
+        <span class="p-name"></span>,
+        <span class="p-org"></span>
+        <span class="dates"><time class="dt-start" datetime=""></time>&ndash<time class="dt-end" datetime=""></time></span>
+        </h3>
+        </li>
+      -->
+
+      {{#contributions}}
+        <li class="p-affiliation h-event">
+          <span class="p-name">{{name}}</span>,
+          {{> org}}
+          {{> dates}}
+          {{> content_inline}}
+        </li>
+      {{/contributions}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Presentations</h2>
+    <ul id="presentations" class="simple">
+
+      <!--
+        <li class="presentation h-event h-card">
+        <span class="p-name"></span>
+        <span class="p-org"></span>
+        <span class="p-description">[<a href="">video</a>, <a href="">slides</a>]</span>
+        <span class="dates"><time class="dt-start" datetime="2014">14</time></span>
+        <iframe src="" width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </li>
+      -->
+
+      {{#presentations}}
+        <li class="presentation h-event">
+          <span class="p-name">{{name}}</span>,
+          {{> org}}
+          {{> content_inline}}
+          {{> dates}}
+          <iframe src="{{{video_embed_url}}}" width="660" height="371" frameborder="0" allowfullscreen></iframe>
+        </li>
+      {{/presentations}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="simple">
+      {{#education}}
+        <li class="p-education h-event">
+          <span class="name">{{name}}</span>,
+          {{> org}}
+          {{> dates}}
+        </li>
+      {{/education}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <ul id="interests" class="simple">
+      <li>Augmented Reality, Digital Contracts &amp; Reputation</li>
+      <li>Community Organizing, Volunteering &amp; Open Source</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <div id="references">
+      <p>Available upon request</p>
+    </div>
+  </section>
+</div>
+<script>
+analytics.track('jh-com.resume', { value: 1 });
+</script>

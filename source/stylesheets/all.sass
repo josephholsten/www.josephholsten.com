@@ -64,10 +64,10 @@ svg.icon
   #pdf-download
     position: relative
     float: right
-    img
-      border: none
-      width: 32px
-      height: 32px
+    svg.pdf
+      width: 2em
+      height: 2em
+      fill: rgb(203, 75, 22)
   .page
     z-index: 0
   section
@@ -97,9 +97,9 @@ svg.icon
         position: absolute
         top: 0
         right: 0
-      .vcard, .h-card
-        .p-description
+      .h-card, .h-event
+        .p-description, .e-content
           color: #888
           font-size: 80%
-        .p-description *
+        .p-description *, .e-content *
           color: #888

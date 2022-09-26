@@ -1,0 +1,21 @@
+{{#org}}
+  <span class="p-org h-card">
+    {{#url}}
+      <a class="p-name" href="{{{url}}}">{{name}}</a>{{#adr}},{{/adr}}
+    {{/url}}
+    {{^url}}
+      <span class="p-name">{{name}}</span>{{#adr}},{{/adr}}
+    {{/url}}
+    {{#adr}}
+      <span class="p-adr">
+        <span class="p-locality">{{locality}}</span>,
+        {{#region_abbr}}
+            <abbr class="p-region caps" title="{{{region}}}">{{region_abbr}}</abbr>
+        {{/region_abbr}}
+        {{^region_abbr}}
+            <span class="p-region caps">{{region}}</span>
+        {{/region_abbr}}
+      </span>
+    {{/adr}}
+  </span>
+{{/org}}
