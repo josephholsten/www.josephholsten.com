@@ -2,6 +2,7 @@
 layout: layout.mustache
 title: RETR4r
 page_classes: page pages_rets4r
+segment_event: jh-com.rets4r
 ---
 While I was at a [small real estate startup][], we processesed real
 estate data for regions as large as the Dallas metro area. To keep our
