@@ -1,12 +1,12 @@
 ---
 layout: layout.mustache
-title: Notes
+title: Scriptos
 page_classes: page
-segment_event: jh-com.notas
+segment_event: jh-com.scriptos
 ---
-# Notes
+# Scriptos
 
-Here lie the notes I've collected over the years. 
+Here lie the writings I've collected over the years. 
 
 Why yes, it's rather sparse here at the moment. I have over a decades worth of text files in my personal notes, and honestly I haven't been diligent in organizing or separating the private from the public. No more.
 
