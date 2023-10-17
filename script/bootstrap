@@ -6,12 +6,24 @@ command_absent() {
 }
 
 if command_absent node; then
-  echo 'node(1) not found, install with `brew install node` or similar'
+  echo 'node(1) not found'
+  echo 'On macOS, install with   `brew install node`'
+  echo 'On FreeBSD, install with `pkg  install node`'
   exit 1
 fi
 
+if command_absent npm; then
+  echo 'npm(1) not found'
+  echo 'On macOS, install with   `brew install node`'
+  echo 'On FreeBSD, install with `pkg  install npm`'
+  exit 1
+fi
+
+
 if command_absent prince; then
-  echo 'prince(1) not found, install with `brew install homebrew/cask/prince` or similar'
+  echo 'prince(1) not found'
+  echo 'On macOS, install with `brew install homebrew/cask/prince`'
+  echo 'On FreeBSD, install with the package from https://www.princexml.com/download/'
   exit 1
 fi
 
