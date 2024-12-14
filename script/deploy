@@ -30,7 +30,9 @@ cd build
     git commit -m"Site updated to ${head_abbr_commit_hash}" > /dev/null 2>&1
 
     echo "Pushing... to $remote_repo master:$remote_branch"
-		git push --force origin main:"${remote_branch}"
+		git push --force origin master:"${remote_branch}"
+		# should be
+		# git push --force origin main:"${remote_branch}"
 
     # echo "Removing git..."
     # rm -fr .git
