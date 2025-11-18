@@ -139,10 +139,10 @@ experience:
   dt_end:           "2017-03-07"
   dt_end_display:   2017-03
   content:
-  - 'Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using <a href="https://www.terraform.io/">Terraform</a> for provisioning, <a href="https://puppet.com/">Puppet</a> for platform config &amp; <a href="https://www.ansible.com/">Ansible</a> for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.'
-  - 'Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using <a href="https://sensuapp.org/">Sensu</a> &amp; <a href="http://graphiteapp.org/">Graphite</a>.'
-  - 'Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the <a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a> &amp; <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a> providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.'
-  - 'Tooling development: Implemented &amp; maintained UltraDNS and NS1 Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.'
+  - Automated hybrid cloud infrastructure managing 1,300 servers across 14 datacenters and 3 cloud providers using Terraform, Puppet, and Ansible, enabling multi-cloud deployment flexibility and eliminating vendor lock-in for CDN and customer data platform services.
+  - Designed cross-region monitoring and autoscaling using <a href="https://sensu.io/">Sensu</a>/<a href="http://graphiteapp.org/">Graphite</a> to ensure high availability across geographically distributed infrastructure supporting customer-facing CDN services.
+  - Led 90-day DNS migration converting 2,000 manually-managed records to infrastructure-as-code, directing 2-engineer team to build open-source <a href="https://github.com/terraform-providers/terraform-provider-ultradns">Terraform providers for UltraDNS</a> and <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a>, preventing production errors through automated testing and detecting unauthorized configuration changes.
+  - Optimized Kafka infrastructure for Customer Data Platform by contributing custom RoundRobinAssignor to open-source project, enabling dynamic cluster scaling during maintenance without data rejection, reducing infrastructure costs through right-sized capacity.
 
 - job_title: Infrastructure Engineer
   org:
