@@ -280,15 +280,15 @@
         </li>
         <li class="p-experience h-event">
           <h3>
-            <span class="p-job-title">Software Engineer</span>,
+            <span class="p-job-title">Platform Engineer (Contract)</span>,
               <span class="p-org h-card">
-                  <a class="p-name" href="http://lovable.tech/">Lovable Technology</a>
+                  <a class="p-name" href="https://www.oracle.com/cloud/">Oracle Cloud Infrastructure</a>
               </span>
 
           <!--
           <span class="p-location h-adr">
-            <span class="p-locality">San Francisco</span>,
-            <span class="p-region">CA</span>,
+            <span class="p-locality">Seattle</span>,
+            <span class="p-region">WA</span>,
             <span class="p-country-name">US</span>
           </span>
           -->
@@ -298,7 +298,9 @@
             </span>
           </h3>
           <ul class="p-description e-content">
-              <li>Contracted with Oracle to implement a Go SDK and <a href="https://github.com/oracle/terraform-provider-baremetal">Terraform Provider for Oracle Bare Metal Cloud</a>.</li>
+              <li>Delivered foundational Go SDK and <a href="https://github.com/oracle/terraform-provider-baremetal">Terraform provider</a> for Oracle Cloud Infrastructure's competitive market launch (November 2017), enabling configuration-as-code capabilities essential for enterprise customer acquisition against AWS.</li>
+              <li>Built production-ready infrastructure tooling from minimal documentation during private beta, coordinating across Oracle service teams to define API contracts, ensure idempotent operations, and establish sustainable development practices for future team scaling.</li>
+              <li>Designed core resource support (networking, compute, load balancing) with Hashicorp integration standards, then trained newly-formed Oracle team on maintenance workflows, establishing foundation now used by OpenAI, NVIDIA DGX Cloud, and TikTok for AI/ML workloads.</li>
           </ul>
         </li>
         <li class="p-experience h-event">
@@ -321,10 +323,10 @@
             </span>
           </h3>
           <ul class="p-description e-content">
-              <li>Infrastructure buildout, maintenance, &amp; automation: Collaborated with infrastructure and product engineers to maintain ~1300 servers using <a href="https://www.terraform.io/">Terraform</a> for provisioning, <a href="https://puppet.com/">Puppet</a> for platform config &amp; <a href="https://www.ansible.com/">Ansible</a> for deployment. Servers were spread across 14 datacenters/regions, from 3 cloud providers and 1 non-cloud provider.</li>
-              <li>Monitoring: Built server monitoring service to support cross-region availability and autoscaling clusters using <a href="https://sensuapp.org/">Sensu</a> &amp; <a href="http://graphiteapp.org/">Graphite</a>.</li>
-              <li>Secondary DNS for Geo-Targeted Services: Converted ~2000 records for 12 datacenters from manual configuration in UltraDNS to configuration-as-code with support for both UltraDNS &amp; NS1. Implemented the <a href="https://github.com/terraform-providers/terraform-provider-ultradns">UltraDNS</a> &amp; <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a> providers for Terraform, and a Nagios-compatible monitoring plugin to check for divergence.</li>
-              <li>Tooling development: Implemented &amp; maintained UltraDNS and NS1 Terraform providers in Go (now included the offical release), Nagios/Sensu plugins in Ruby, and assorted work in Python, Java, Node.js, Groovy &amp; PHP.</li>
+              <li>Automated hybrid cloud infrastructure managing 1,300 servers across 14 datacenters and 3 cloud providers using Terraform, Puppet, and Ansible, enabling multi-cloud deployment flexibility and eliminating vendor lock-in for CDN and customer data platform services.</li>
+              <li>Designed cross-region monitoring and autoscaling using <a href="https://sensu.io/">Sensu</a>/<a href="http://graphiteapp.org/">Graphite</a> to ensure high availability across geographically distributed infrastructure supporting customer-facing CDN services.</li>
+              <li>Led 90-day DNS migration converting 2,000 manually-managed records to infrastructure-as-code, directing 2-engineer team to build open-source <a href="https://github.com/terraform-providers/terraform-provider-ultradns">Terraform providers for UltraDNS</a> and <a href="https://github.com/terraform-providers/terraform-provider-ns1">NS1</a>, preventing production errors through automated testing and detecting unauthorized configuration changes.</li>
+              <li>Optimized Kafka infrastructure for Customer Data Platform by contributing custom RoundRobinAssignor to open-source project, enabling dynamic cluster scaling during maintenance without data rejection, reducing infrastructure costs through right-sized capacity.</li>
           </ul>
         </li>
         <li class="p-experience h-event">
