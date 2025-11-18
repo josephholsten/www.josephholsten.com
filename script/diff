@@ -1,18 +1,15 @@
 #!/bin/sh
-# deploy - commit built files to gh-pages branch and push
-# Why don't I use another tool for this? Because they keep breaking, which is exhausting for something this simple.
+# diff - diff the built files in gh-pages branch
 
 set -e
 
 remote_repo="https://github.com/josephholsten/www.josephholsten.com.git"
 remote_branch="gh-pages"
 
-echo 'Publishing site...'
 cd build
 
     git init
     git add .
-    # echo "Pushing... to $remote_repo master:$remote_branch"
     git remote add origin $remote_repo ||
             echo "Remote origin already exists"
     git fetch
@@ -20,5 +17,3 @@ cd build
     git diff "$@"
 
 cd -
-echo 'Done'
-
