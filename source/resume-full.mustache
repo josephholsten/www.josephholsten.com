@@ -25,18 +25,29 @@ self_card:
 
 experience:
 
-- job_title: Director of Engineering
+- job_title: Fractional Director of Engineering
+  org:
+    name: Zoning Intelligence Platform (Stealth)
+  location: Remote
+  dt_start:         "2026-01-21"
+  dt_start_display: 2026-01
+  content:
+  - Building a RAG platform for zoning code intelligence serving legal and real estate professionals; using vectorless RAG with hierarchical tree indexing and LLM-based tree navigation over structured legal codes, preserving document hierarchy rather than flattening to embedding chunks.
+  - Implementing type-safe agent orchestration with PydanticAI and Claude Sonnet 4 on a FastAPI backend; infrastructure on AWS/EKS with Terraform.
+
+- job_title: Fractional Director of Engineering
   org:
     name: Guardrail Technologies
   location: Remote
   dt_start:         "2025-10-29"
   dt_start_display: 2025-10
-  dt_ongoing:       true
+  dt_end:           "2026-01-29"
+  dt_end_display:   2026-01
   content:
-  - Leading platform rebuild for AI safety and LLM governance serving highly regulated industries, establishing production-grade engineering practices.
-  - Implementing observability infrastructure including monitoring, distributed tracing, and incident response procedures to enable reliable production operations for LLM systems.
-  - Architecting LLM and MCP gateway infrastructure with authentication, authorization, audit logging, and PII redaction capabilities.
-  - Optimizing infrastructure costs through usage visibility and right-sizing while maintaining compliance requirements for regulated customers.
+  - "Fixed a fundamental security flaw in the PII redaction pipeline: the system was sending the values it was contracted to protect to a commercial LLM vendor for pattern detection; replaced LLM-based detection with per-customer regex rules stored in MongoDB, eliminating the exfiltration entirely."
+  - "Stabilized a vibe-coded AI safety prototype to deliver the first paying customer by contract deadline: rebuilt the application delivery pipeline to enable reproducible environment promotion, then shipped the three contractually required features (conversation history fix, Claude LLM backend, configurable data redaction policies)."
+  - Implemented synthetic service availability monitoring and isolated staging/production DNS as CAPA after a staging deployment took down production; no further production outages occurred through end of engagement.
+  - Extended the platform's LLM backend to support OpenAI (GPT-4o, GPT-5), Anthropic Claude, and self-hosted Ollama models (Llama, Mistral, DeepSeek), enabling provider selection by compliance requirement; led VRAM and inference-speed analysis to migrate self-hosted inference from third-party GPU hosting to a right-sized Azure NC24ads A100 v4, cutting costs and eliminating the markup.
 
 - job_title: Senior Technical Program Manager
   org:
