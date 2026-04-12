@@ -32,8 +32,9 @@ experience:
   dt_start:         "2026-01-21"
   dt_start_display: 2026-01
   content:
-  - Building a RAG platform for zoning code intelligence serving legal and real estate professionals; using vectorless RAG with hierarchical tree indexing and LLM-based tree navigation over structured legal codes, preserving document hierarchy rather than flattening to embedding chunks.
-  - Implementing type-safe agent orchestration with PydanticAI and Claude Sonnet 4 on a FastAPI backend; infrastructure on AWS/EKS with Terraform.
+  - Building a zoning code intelligence platform for legal and real estate professionals; vectorless RAG with hierarchical tree indexing and LLM-based tree navigation over structured legal codes, preserving document hierarchy rather than flattening to embedding chunks.
+  - Training a domain-specific SLM (Qwen3.5-9B) using DeepSeek-R1 to generate formally correct evaluation triples, expert attorney review and validation, then fine-tuning with Axolotl on A100; comparing against Phi-4 and Llama 3.1-8B baselines.
+  - Type-safe agent orchestration with PydanticAI and Claude Sonnet 4 on FastAPI; infrastructure on Kubernetes and Terraform.
 
 - job_title: Fractional Director of Engineering
   org:
@@ -480,7 +481,7 @@ education:
 
       <li>
         <h3>AI/ML Infrastructure</h3>
-        LLM model serving, pgvector, model operations, inference pipelines
+        LLM model serving, SLM fine-tuning (Axolotl/SFT), PydanticAI, RAG architecture, model operations, inference pipelines
       </li>
 
       <li>
