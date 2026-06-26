@@ -32,9 +32,11 @@ experience:
   dt_start:         "2026-01-21"
   dt_start_display: 2026-01
   content:
-  - Building a zoning code intelligence platform for legal and real estate professionals; vectorless RAG with hierarchical tree indexing and LLM-based tree navigation over structured legal codes, preserving document hierarchy rather than flattening to embedding chunks.
-  - Training a domain-specific SLM (Qwen3.5-9B) using DeepSeek-R1 to generate formally correct evaluation triples, expert attorney review and validation, then fine-tuning with Axolotl on A100; comparing against Phi-4 and Llama 3.1-8B baselines.
-  - Type-safe agent orchestration with PydanticAI and Claude Sonnet 4 on FastAPI; infrastructure on Kubernetes and Terraform.
+  - Designing and building an end-to-end legal document ingestion pipeline that normalizes municipal and regional ordinances from 22+ jurisdictions into Akoma Ntoso (legal XML), constructs a knowledge graph via NLP, and exposes structured graph context to a fine-tuned SLM at inference time, replacing flat embedding-based retrieval with document-hierarchy-preserving intelligence.
+  - Designed proprietary hierarchical tree indexing for legal code navigation (purpose-built for ordinance structure, analogous to PageIndex), enabling LLM-based tree traversal that preserves title/chapter/section hierarchy rather than collapsing to embedding chunks.
+  - Implementing QLoRA fine-tuning on a self-hosted Qwen 3.5 SLM (OCI, Nvidia GPUs), using distillation as a bridge while land use attorneys and paralegals develop domain training data; collecting user feedback for future RLHF alignment.
+  - Established a deliberate compliance architecture that excludes customer documents from training and inference entirely; this intentional market segment decision eliminates data liability exposure from the ML stack and keeps the platform outside CJIS and PII-heavy use cases.
+  - Driving benchmark-driven technology selection across the ML stack: evaluating NLP parsers (Stanza, CoreNLP, AllenAI SRL), graph databases (Memgraph, Kuzu, Neo4j, FalkorDB, Apache AGE), and base models (Qwen, OLMo, Phi, Gemma) against the legal domain rather than general leaderboard rankings.
 
 - job_title: Fractional Director of Engineering
   org:
