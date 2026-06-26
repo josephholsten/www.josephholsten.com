@@ -22,11 +22,11 @@ if command_absent npm; then
 fi
 
 
-if command_absent prince; then
-  echo 'prince(1) not found'
-  echo 'On macOS,   install with `brew install homebrew/cask/prince`'
-  echo 'On FreeBSD, install with the package from https://www.princexml.com/download/'
-  echo 'On Linux,   install with the package from https://www.princexml.com/download/'
+if command_absent weasyprint; then
+  echo 'weasyprint(1) not found'
+  echo 'On macOS,   install with `brew install weasyprint`'
+  echo 'On FreeBSD, install with `pkg install py-weasyprint`'
+  echo 'On Linux,   see https://doc.courtbouillon.org/weasyprint/v52.5/install.html#linux'
   exit 1
 fi
 

@@ -25,6 +25,6 @@ do
 done
 
 mkdir -p build/files
-prince http://localhost:8080/resume -o build/files/resume.pdf
+weasyprint http://localhost:8080/resume build/files/resume.pdf
 
 kill "${pid}"
