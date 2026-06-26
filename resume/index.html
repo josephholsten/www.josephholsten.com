@@ -88,7 +88,7 @@
 
       <li>
         <h3>AI/ML Infrastructure</h3>
-        LLM model serving, pgvector, model operations, inference pipelines
+        LLM model serving, SLM fine-tuning (Axolotl/SFT), PydanticAI, RAG architecture, model operations, inference pipelines
       </li>
 
       <li>
@@ -123,7 +123,26 @@
       -->
         <li class="p-experience h-event">
           <h3>
-            <span class="p-job-title">Engineering Consultant</span>,
+            <span class="p-job-title">Fractional Director of Engineering</span>,
+              <span class="p-org h-card">
+                  <span class="p-name">Zoning Intelligence Platform (Stealth)</span>
+              </span>
+
+            <span class="dates">
+              <time class="dt-start" datetime="2026-01-21">2026-01</time>
+            </span>
+          </h3>
+          <ul class="p-description e-content">
+              <li>Designing and building an end-to-end legal document ingestion pipeline that normalizes municipal and regional ordinances from 22+ jurisdictions into Akoma Ntoso (legal XML), constructs a knowledge graph via NLP, and exposes structured graph context to a fine-tuned SLM at inference time, replacing flat embedding-based retrieval with document-hierarchy-preserving intelligence.</li>
+              <li>Designed proprietary hierarchical tree indexing for legal code navigation (purpose-built for ordinance structure, analogous to PageIndex), enabling LLM-based tree traversal that preserves title/chapter/section hierarchy rather than collapsing to embedding chunks.</li>
+              <li>Implementing QLoRA fine-tuning on a self-hosted Qwen 3.5 SLM (OCI, Nvidia GPUs), using distillation as a bridge while land use attorneys and paralegals develop domain training data; collecting user feedback for future RLHF alignment.</li>
+              <li>Established a deliberate compliance architecture that excludes customer documents from training and inference entirely; this intentional market segment decision eliminates data liability exposure from the ML stack and keeps the platform outside CJIS and PII-heavy use cases.</li>
+              <li>[object Object]</li>
+          </ul>
+        </li>
+        <li class="p-experience h-event">
+          <h3>
+            <span class="p-job-title">Fractional Director of Engineering</span>,
               <span class="p-org h-card">
                   <span class="p-name">Guardrail Technologies</span>
               </span>
@@ -134,10 +153,10 @@
             </span>
           </h3>
           <ul class="p-description e-content">
-              <li>Led platform rebuild for AI safety and LLM governance serving highly regulated industries, establishing production-grade engineering practices.</li>
-              <li>Implemented observability infrastructure including monitoring, distributed tracing, and incident response procedures to enable reliable production operations for LLM systems.</li>
-              <li>Architected LLM and MCP gateway infrastructure with authentication, authorization, audit logging, and PII redaction capabilities.</li>
-              <li>Optimized infrastructure costs through usage visibility and right-sizing while maintaining compliance requirements for regulated customers.</li>
+              <li>Fixed a fundamental security flaw in the PII redaction pipeline: the system was sending the values it was contracted to protect to a commercial LLM vendor for pattern detection; replaced LLM-based detection with per-customer regex rules stored in MongoDB, eliminating the exfiltration entirely.</li>
+              <li>Stabilized a vibe-coded AI safety prototype to deliver the first paying customer by contract deadline: rebuilt the application delivery pipeline to enable reproducible environment promotion, then shipped the three contractually required features (conversation history fix, Claude LLM backend, configurable data redaction policies).</li>
+              <li>Implemented synthetic service availability monitoring and isolated staging/production DNS as CAPA after a staging deployment took down production; no further production outages occurred through end of engagement.</li>
+              <li>Extended the platform's LLM backend to support OpenAI (GPT-4o, GPT-5), Anthropic Claude, and self-hosted Ollama models (Llama, Mistral, DeepSeek), enabling provider selection by compliance requirement; led VRAM and inference-speed analysis to migrate self-hosted inference from third-party GPU hosting to a right-sized Azure NC24ads A100 v4, cutting costs and eliminating the markup.</li>
           </ul>
         </li>
         <li class="p-experience h-event">
