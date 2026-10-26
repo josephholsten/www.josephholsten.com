@@ -142,7 +142,7 @@
         </li>
         <li class="p-experience h-event">
           <h3>
-            <span class="p-job-title">Fractional Director of Engineering</span>,
+            <span class="p-job-title">Consultant</span>,
               <span class="p-org h-card">
                   <span class="p-name">Guardrail Technologies</span>
               </span>
@@ -153,7 +153,7 @@
             </span>
           </h3>
           <ul class="p-description e-content">
-              <li>Fixed a fundamental security flaw in the PII redaction pipeline: the system was sending the values it was contracted to protect to a commercial LLM vendor for pattern detection; replaced LLM-based detection with per-customer regex rules stored in MongoDB, eliminating the exfiltration entirely.</li>
+              <li>Rebuilt the PII redaction pipeline around configurable per-customer detection rules.</li>
               <li>Stabilized a vibe-coded AI safety prototype to deliver the first paying customer by contract deadline: rebuilt the application delivery pipeline to enable reproducible environment promotion, then shipped the three contractually required features (conversation history fix, Claude LLM backend, configurable data redaction policies).</li>
               <li>Implemented synthetic service availability monitoring and isolated staging/production DNS as CAPA after a staging deployment took down production; no further production outages occurred through end of engagement.</li>
               <li>Extended the platform's LLM backend to support OpenAI (GPT-4o, GPT-5), Anthropic Claude, and self-hosted Ollama models (Llama, Mistral, DeepSeek), enabling provider selection by compliance requirement; led VRAM and inference-speed analysis to migrate self-hosted inference from third-party GPU hosting to a right-sized Azure NC24ads A100 v4, cutting costs and eliminating the markup.</li>
